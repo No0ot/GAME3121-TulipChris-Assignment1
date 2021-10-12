@@ -5,10 +5,6 @@ PhysicsObject::PhysicsObject()
 	
 }
 
-void PhysicsObject::update(const Ogre::FrameEvent& evt)
-{
-}
-
 Ogre::SceneNode* PhysicsObject::getNode()
 {
 	return node;
@@ -19,29 +15,34 @@ void PhysicsObject::setNode(Ogre::SceneNode* newnode)
 	node = newnode;
 }
 
-const String& PhysicsObject::getMovableType(void) const
+Ogre::ManualObject* PhysicsObject::GetMesh()
 {
-	// TODO: insert return statement here
-	return "Physics Object";
+	return mesh;
 }
 
-const AxisAlignedBox& PhysicsObject::getBoundingBox(void) const
+void PhysicsObject::SetMesh(Ogre::ManualObject* newmesh)
 {
-	// TODO: insert return statement here
-	return AxisAlignedBox();
+	mesh = newmesh;
 }
 
-Real PhysicsObject::getBoundingRadius(void) const
+void PhysicsObject::SetMoveSpeed(float newmovespeed)
 {
-	return Real();
+	moveSpeed = newmovespeed;
 }
 
-void PhysicsObject::_updateRenderQueue(RenderQueue* queue)
+float PhysicsObject::GetMoveSpeed()
 {
+	return moveSpeed;
 }
 
-void PhysicsObject::visitRenderables(Renderable::Visitor* visitor, bool debugRenderables)
+void PhysicsObject::SetVelocity(Ogre::Vector3 newvelocity)
 {
+	velocity = newvelocity;
+}
+
+Ogre::Vector3 PhysicsObject::GetVelocity()
+{
+	return velocity;
 }
 
 PhysicsObject::~PhysicsObject()

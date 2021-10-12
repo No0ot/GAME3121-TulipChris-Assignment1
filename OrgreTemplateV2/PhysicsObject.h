@@ -4,10 +4,11 @@
 using namespace Ogre;
 
 
-class PhysicsObject : public Ogre::MovableObject
+class PhysicsObject
 {
 private:
 	Ogre::SceneNode* node;
+    Ogre::ManualObject* mesh;
 
     float moveSpeed;
     Ogre::Vector3 velocity;
@@ -15,25 +16,19 @@ public:
     PhysicsObject();
     ~PhysicsObject();
 
-    void update(const Ogre::FrameEvent& evt); virtual
+    virtual void update(const Ogre::FrameEvent& evt) = 0; 
 
     Ogre::SceneNode* getNode();
     void setNode(Ogre::SceneNode* newnode);
 
-    //Inherited functions from MovableObject
+    Ogre::ManualObject* GetMesh();
+    void SetMesh(Ogre::ManualObject* newmesh);
 
-    /** @copydoc MovableObject::getMovableType */
-    const String& getMovableType(void) const;
-    /** @copydoc MovableObject::getBoundingBox */
-    const AxisAlignedBox& getBoundingBox(void) const;
-    /** @copydoc MovableObject::getBoundingRadius */
-    Real getBoundingRadius(void) const;
-    /** @copydoc MovableObject::_updateRenderQueue */
-    void _updateRenderQueue(RenderQueue* queue);
-    /// @copydoc MovableObject::visitRenderables
-    void visitRenderables(Renderable::Visitor* visitor,
-        bool debugRenderables = false);
+    void SetMoveSpeed(float newmovespeed);
+    float GetMoveSpeed();
 
+    void SetVelocity(Ogre::Vector3 newvelocity);
+    Ogre::Vector3 GetVelocity();
 };
 
 class PhysicsFrameListener : public Ogre::FrameListener

@@ -17,6 +17,7 @@ class Game
 private:
     SceneManager* scnMgr;
     Root* root;
+    Paddle* paddleObject;
     std::vector<PhysicsObject*> physicsObjects;
     Ogre::SceneNode* paddleNode;
 

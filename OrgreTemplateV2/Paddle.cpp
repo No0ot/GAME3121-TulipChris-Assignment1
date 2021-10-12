@@ -1,0 +1,44 @@
+#include "Paddle.h"
+#include <iostream>
+
+Paddle::Paddle()
+{
+	//paddleMesh = new MyMesh();
+	//paddleMesh->meshobject = paddleMesh->createCubeMesh("Cube", "FlatVertexColour"
+	SetMoveSpeed(20.0f);
+}
+
+Paddle::~Paddle()
+{
+}
+
+void Paddle::update(const Ogre::FrameEvent& evt)
+{
+	getNode()->translate((GetVelocity() * GetMoveSpeed()) * evt.timeSinceLastFrame);
+	SetVelocity(GetVelocity() * 0.95f);
+
+	checkBounds();
+	std::cout << getNode()->getPosition().x  << std::endl;
+}
+
+void Paddle::checkBounds()
+{
+	if (getNode()->getPosition().x < -21.0f)
+	{
+		getNode()->setPosition(Ogre::Vector3(-21.0f, getNode()->getPosition().y, getNode()->getPosition().z));
+	}
+	if (getNode()->getPosition().x > 21.0f)
+	{
+		getNode()->setPosition(Ogre::Vector3(21.0f, getNode()->getPosition().y, getNode()->getPosition().z));
+	}
+}
+
+void Paddle::MoveLeft()
+{
+	SetVelocity(Ogre::Vector3(-1, 0, 0));
+}
+
+void Paddle::MoveRight()
+{
+	SetVelocity(Ogre::Vector3(1, 0, 0));
+}
