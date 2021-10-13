@@ -3,8 +3,6 @@
 
 Paddle::Paddle()
 {
-	//paddleMesh = new MyMesh();
-	//paddleMesh->meshobject = paddleMesh->createCubeMesh("Cube", "FlatVertexColour"
 	SetMoveSpeed(50.0f);
 }
 
@@ -14,6 +12,10 @@ Paddle::~Paddle()
 
 void Paddle::update(const Ogre::FrameEvent& evt)
 {
+	if (moveLeft)
+		MoveLeft();
+	else if (moveRight)
+		MoveRight();
 
 	getNode()->translate((GetVelocity() * GetMoveSpeed()) * evt.timeSinceLastFrame);
 	SetVelocity(GetVelocity() * 0.95f);

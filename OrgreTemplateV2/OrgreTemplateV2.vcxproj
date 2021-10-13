@@ -162,19 +162,19 @@
     <ClCompile Include="Source.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Week4-1-ManualObjectDemo.cpp">
+    <ClCompile Include="Week5-3-TrayDemo.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Week4-2-ManualObjectInteractiveDemo.cpp">
+    <ClCompile Include="Week5-4-TrayDemo2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Week4-3-ManualObjectAnimationDemo.cpp">
+    <ClCompile Include="week5-5-TrayButtonDemo.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Week4-4-ManualObjectColored.cpp">
+    <ClCompile Include="week5-6-TrayFrameStatsDemo.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Week4-5-ManualObjectCubeDemo.cpp">
+    <ClCompile Include="week5-7-PrefabTypeDemo.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>

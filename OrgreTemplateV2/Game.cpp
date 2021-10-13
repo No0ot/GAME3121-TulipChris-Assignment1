@@ -1,5 +1,32 @@
 #include "Game.h"
 
+class PhysicsFrameListener : public Ogre::FrameListener
+{
+private:
+    std::vector<PhysicsObject*> physicsObjects;
+    Game* gameInstance;
+public:
+
+    PhysicsFrameListener(std::vector<PhysicsObject*> physicsobjects, Game* gameinstanceref )
+    {
+        for (auto objects : physicsobjects)
+        {
+            physicsObjects.push_back(objects);
+        }
+        gameInstance = gameinstanceref;
+    }
+
+    bool frameStarted(const Ogre::FrameEvent& evt)
+    {
+        for (auto objects : physicsObjects)
+        {
+            objects->update(evt);
+        }
+        gameInstance->UpdateUI(evt);
+        return true;
+    }
+};
+
 Game::Game()
     : ApplicationContext("GAME3121 - TulipChris - Assignment1")
 {
@@ -33,10 +60,29 @@ bool Game::keyPressed(const KeyboardEvent& evt)
         getRoot()->queueEndRendering();
         break;
     case 'a':
-        paddleObject->MoveLeft();
+        paddleObject->moveLeft = true;
         break;
     case 'd':
-        paddleObject->MoveRight();
+        paddleObject->moveRight = true;
+        break;
+    case 'g':
+        ballObject->BeginPlay();
+        break;
+    default:
+        break;
+    }
+    return true;
+}
+
+bool Game::keyReleased(const KeyboardEvent& evt)
+{
+    switch (evt.keysym.sym)
+    {
+    case 'a':
+        paddleObject->moveLeft = false;
+        break;
+    case 'd':
+        paddleObject->moveRight = false;
         break;
     default:
         break;
@@ -49,6 +95,7 @@ void Game::CreateScene()
     CreateLights();
     CreateBackground();
     CreatePhysicsObjects();
+    CreateUI();
 }
 
 void Game::CreateCamera()
@@ -70,7 +117,7 @@ void Game::CreateCamera()
 
 void Game::CreateFrameListener()
 {
-    Ogre::FrameListener* FrameListener = new PhysicsFrameListener(physicsObjects);
+    Ogre::FrameListener* FrameListener = new PhysicsFrameListener(physicsObjects, this);
     root->addFrameListener(FrameListener);
 }
 
@@ -145,7 +192,7 @@ void Game::CreatePhysicsObjects()
     ballNode = scnMgr->getRootSceneNode()->createChildSceneNode("ballNode");
     ballNode->attachObject(sphereMesh);
     ballNode->setScale(1.0, 1.0, 1.0);
-    ballNode->setPosition(0, 20, 250);
+    ballNode->setPosition(0, 15, 250);
 
     ballObject = new Ball(paddleObject);
     ballObject->setNode(ballNode);
@@ -153,4 +200,43 @@ void Game::CreatePhysicsObjects()
 
     physicsObjects.push_back(paddleObject);
     physicsObjects.push_back(ballObject);
+}
+
+void Game::CreateUI()
+{
+    mTrayMgr = new OgreBites::TrayManager("InterfaceName", getRenderWindow());
+    //you must add this in order to add a tray
+    scnMgr->addRenderQueueListener(mOverlaySystem);
+
+    //Once you have your tray manager, make sure you relay input events to it.
+    addInputListener(mTrayMgr);
+
+    mInfoLabel = mTrayMgr->createLabel(TL_TOP, "TInfo", "Pong Game", 300);
+
+    mFpsLabel = mTrayMgr->createLabel(TL_TOPRIGHT, "FPS", "FPS:", 150);
+    mFps = mTrayMgr->createLabel(TL_TOPRIGHT, "fps", "60", 150);
+
+    mScoreLabel = mTrayMgr->createLabel(TL_TOPLEFT, "Score", "Score:", 150);
+    mScore = mTrayMgr->createLabel(TL_TOPLEFT, "score", scorenum, 150);
+
+    mTpuLabel = mTrayMgr->createLabel(TL_TOPRIGHT, "Time/Update", "Time/Update:", 150);
+    mTpu = mTrayMgr->createLabel(TL_TOPRIGHT, "tpu", "0", 150);
+
+    mLivesLabel = mTrayMgr->createLabel(TL_TOPLEFT, "Lives", "Lives:", 150);
+    mLives = mTrayMgr->createLabel(TL_TOPLEFT, "lives", livesnum, 150);
+
+}
+
+void Game::UpdateUI(const Ogre::FrameEvent& evt)
+{
+    livesnum = Ogre::StringConverter::toString(ballObject->lives);
+    mLives->setCaption(livesnum);
+    scorenum = Ogre::StringConverter::toString(ballObject->score);
+    mScore->setCaption(scorenum);
+
+    Tpunum = Ogre::StringConverter::toString(evt.timeSinceLastFrame);
+    mTpu->setCaption(Tpunum);
+
+    fpsnum = Ogre::StringConverter::toString(1 / evt.timeSinceLastFrame);
+    mFps->setCaption(fpsnum);
 }

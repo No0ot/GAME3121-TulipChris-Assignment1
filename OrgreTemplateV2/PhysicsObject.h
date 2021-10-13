@@ -31,27 +31,5 @@ public:
     Ogre::Vector3 GetVelocity();
 };
 
-class PhysicsFrameListener : public Ogre::FrameListener
-{
-private:
-    std::vector<PhysicsObject*> physicsObjects;
-public:
 
-    PhysicsFrameListener(std::vector<PhysicsObject*> physicsobjects)
-    {
-        for (auto objects : physicsobjects)
-        {
-            physicsObjects.push_back(objects);
-        }
-    }
-
-    bool frameStarted(const Ogre::FrameEvent& evt)
-    {
-        for (auto objects : physicsObjects)
-        {
-            objects->update(evt);
-        }
-        return true;
-    }
-};
 

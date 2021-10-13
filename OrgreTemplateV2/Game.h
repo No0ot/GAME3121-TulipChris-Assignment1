@@ -3,6 +3,7 @@
 #include "OgreApplicationContext.h"
 #include "OgreInput.h"
 #include "OgreRTShaderSystem.h"
+#include "OgreTrays.h"
 #include "Ball.h"
 #include "Paddle.h"
 #include <iostream>
@@ -25,6 +26,25 @@ private:
     Ball* ballObject;
     Ogre::SceneNode* ballNode;
 
+    TrayManager* mTrayMgr;
+    TrayListener myTrayListener;
+    Label* mInfoLabel;
+    Label* mFpsLabel;
+    Label* mFps;
+    String fpsnum;
+
+    Label* mScoreLabel;
+    Label* mScore;
+    String scorenum;
+
+    Label* mTpuLabel;
+    Label* mTpu;
+    String Tpunum;
+
+    Label* mLivesLabel;
+    Label* mLives;
+    String livesnum;
+
 public:
     Game();
     virtual ~Game() {}
@@ -32,6 +52,7 @@ public:
 
     void setup();
     bool keyPressed(const KeyboardEvent& evt);
+    bool keyReleased(const KeyboardEvent& evt);
     void CreateScene();
     void CreateCamera();
 
@@ -40,5 +61,8 @@ public:
     void CreateBackground();
     void CreateLights();
     void CreatePhysicsObjects();
+    void CreateUI();
+
+    void UpdateUI(const Ogre::FrameEvent& evt);
 };
 
