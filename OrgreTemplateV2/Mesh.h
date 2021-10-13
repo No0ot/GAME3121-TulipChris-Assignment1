@@ -6,10 +6,8 @@ class MyMesh
 private:
 
 public:
-	Ogre::ManualObject* meshobject;
-	MyMesh();
-	~MyMesh();
 
 	static Ogre::ManualObject* createCubeMesh(Ogre::String name, Ogre::String matName);
+	static Ogre::ManualObject* createSphereMesh(Ogre::String name, Ogre::String matName, const float r);
 };
 

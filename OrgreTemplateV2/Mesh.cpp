@@ -1,13 +1,5 @@
 #include "Mesh.h"
 
-MyMesh::MyMesh()
-{
-}
-
-MyMesh::~MyMesh()
-{
-}
-
 Ogre::ManualObject* MyMesh::createCubeMesh(Ogre::String name, Ogre::String matName)
 {
     Ogre::ManualObject* cube = new Ogre::ManualObject(name);
@@ -44,4 +36,49 @@ Ogre::ManualObject* MyMesh::createCubeMesh(Ogre::String name, Ogre::String matNa
     cube->end();
 
     return cube;
+}
+
+Ogre::ManualObject* MyMesh::createSphereMesh(Ogre::String name, Ogre::String matName, const float r)
+{
+    const int nRings = 16;
+    const int nSegments = 16;
+
+    Ogre::ManualObject* sphere = new Ogre::ManualObject(name);
+    sphere->begin(matName);
+
+    float fDeltaRingAngle = (Ogre::Math::PI / nRings);
+    float fDeltaSegAngle = (2 * Ogre::Math::PI / nSegments);
+    unsigned short wVerticeIndex = 0;
+
+    // Generate the group of rings for the sphere
+    for (int ring = 0; ring <= nRings; ring++) {
+        float r0 = r * sinf(ring * fDeltaRingAngle);
+        float y0 = r * cosf(ring * fDeltaRingAngle);
+
+        // Generate the group of segments for the current ring
+        for (int seg = 0; seg <= nSegments; seg++) {
+            float x0 = r0 * sinf(seg * fDeltaSegAngle);
+            float z0 = r0 * cosf(seg * fDeltaSegAngle);
+
+            // Add one vertex to the strip which makes up the sphere
+            sphere->position(x0, y0, z0);
+            sphere->colour(0, 1, 0);
+            sphere->normal(Ogre::Vector3(x0, y0, z0).normalisedCopy());
+            sphere->textureCoord((float)seg / (float)nSegments, (float)ring / (float)nRings);
+
+            if (ring != nRings) {
+                // each vertex (except the last) has six indicies pointing to it
+                sphere->index(wVerticeIndex + nSegments + 1);
+                sphere->index(wVerticeIndex);
+                sphere->index(wVerticeIndex + nSegments);
+                sphere->index(wVerticeIndex + nSegments + 1);
+                sphere->index(wVerticeIndex + 1);
+                sphere->index(wVerticeIndex);
+                wVerticeIndex++;
+            }
+        }; // end for seg
+    } // end for ring
+    sphere->end();
+
+    return sphere;
 }

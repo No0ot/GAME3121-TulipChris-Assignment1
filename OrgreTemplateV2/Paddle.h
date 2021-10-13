@@ -10,9 +10,11 @@ public:
 	Paddle();
 	~Paddle();
 
+	bool moveLeft;
+	bool moveRight;
 	void update(const Ogre::FrameEvent& evt) override;
 
-	void checkBounds();
+	void CheckBounds();
 
 	void MoveLeft();
 	void MoveRight();

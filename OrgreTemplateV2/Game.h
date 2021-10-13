@@ -3,7 +3,7 @@
 #include "OgreApplicationContext.h"
 #include "OgreInput.h"
 #include "OgreRTShaderSystem.h"
-//#include "PhysicsObject.h"
+#include "Ball.h"
 #include "Paddle.h"
 #include <iostream>
 
@@ -17,13 +17,18 @@ class Game
 private:
     SceneManager* scnMgr;
     Root* root;
-    Paddle* paddleObject;
+
     std::vector<PhysicsObject*> physicsObjects;
+
+    Paddle* paddleObject;
     Ogre::SceneNode* paddleNode;
+    Ball* ballObject;
+    Ogre::SceneNode* ballNode;
 
 public:
     Game();
     virtual ~Game() {}
+
 
     void setup();
     bool keyPressed(const KeyboardEvent& evt);
@@ -31,5 +36,9 @@ public:
     void CreateCamera();
 
     void CreateFrameListener();
+
+    void CreateBackground();
+    void CreateLights();
+    void CreatePhysicsObjects();
 };
 

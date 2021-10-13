@@ -5,7 +5,7 @@ Paddle::Paddle()
 {
 	//paddleMesh = new MyMesh();
 	//paddleMesh->meshobject = paddleMesh->createCubeMesh("Cube", "FlatVertexColour"
-	SetMoveSpeed(20.0f);
+	SetMoveSpeed(50.0f);
 }
 
 Paddle::~Paddle()
@@ -14,14 +14,15 @@ Paddle::~Paddle()
 
 void Paddle::update(const Ogre::FrameEvent& evt)
 {
+
 	getNode()->translate((GetVelocity() * GetMoveSpeed()) * evt.timeSinceLastFrame);
 	SetVelocity(GetVelocity() * 0.95f);
 
-	checkBounds();
-	std::cout << getNode()->getPosition().x  << std::endl;
+	CheckBounds();
+	//std::cout << getNode()->getPosition().x - getNode()->getScale().x / 2  << std::endl;
 }
 
-void Paddle::checkBounds()
+void Paddle::CheckBounds()
 {
 	if (getNode()->getPosition().x < -21.0f)
 	{
@@ -36,6 +37,7 @@ void Paddle::checkBounds()
 void Paddle::MoveLeft()
 {
 	SetVelocity(Ogre::Vector3(-1, 0, 0));
+
 }
 
 void Paddle::MoveRight()
