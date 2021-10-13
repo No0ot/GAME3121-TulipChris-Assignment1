@@ -147,7 +147,7 @@ void Game::CreatePhysicsObjects()
     ballNode->setScale(1.0, 1.0, 1.0);
     ballNode->setPosition(0, 20, 250);
 
-    ballObject = new Ball();
+    ballObject = new Ball(paddleObject);
     ballObject->setNode(ballNode);
     ballObject->SetMesh(sphereMesh);
 

@@ -5,8 +5,9 @@
 class Ball : public PhysicsObject
 {
 private:
+	PhysicsObject* paddleReference;
 public:
-	Ball();
+	Ball(PhysicsObject* ref);
 	~Ball();
 
 	void update(const Ogre::FrameEvent& evt) override;
@@ -15,5 +16,6 @@ public:
 
 	void checkCollision();
 	void ReflectVelocity(bool reflectX);
+	void setPaddleReference(PhysicsObject* ref);
 };
 
