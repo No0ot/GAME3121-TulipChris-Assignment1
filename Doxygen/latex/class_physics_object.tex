@@ -1,0 +1,195 @@
+\hypertarget{class_physics_object}{}\doxysection{Physics\+Object Class Reference}
+\label{class_physics_object}\index{PhysicsObject@{PhysicsObject}}
+
+
+Base class used to implement objects to be affected by physics  
+
+
+
+
+{\ttfamily \#include $<$Physics\+Object.\+h$>$}
+
+Inheritance diagram for Physics\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_physics_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_physics_object_a0dd37cc0f9535b676d3df937eaeb4780}{Physics\+Object}} ()
+\item 
+\mbox{\hyperlink{class_physics_object_a2172e8b71176e3a54d6a8f5ff15d4178}{$\sim$\+Physics\+Object}} ()
+\item 
+virtual void \mbox{\hyperlink{class_physics_object_a6a6eedf5123411636d9fca05d860070e}{update}} (const Ogre\+::\+Frame\+Event \&evt)=0
+\begin{DoxyCompactList}\small\item\em virtual update function to be inherited \end{DoxyCompactList}\item 
+Ogre\+::\+Scene\+Node $\ast$ \mbox{\hyperlink{class_physics_object_a221fdbaad55f9376e5e9441558e1b596}{get\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the attached Scene\+Node \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics_object_a17389c040b67656b2856537f799fa9d2}{set\+Node}} (Ogre\+::\+Scene\+Node $\ast$newnode)
+\begin{DoxyCompactList}\small\item\em Sets the reference to a Scene\+Node \end{DoxyCompactList}\item 
+Ogre\+::\+Manual\+Object $\ast$ \mbox{\hyperlink{class_physics_object_aba93a440a66573666661bedb2aca0455}{Get\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the attached Manual object(mesh) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics_object_aafb8ed1e160e0dd7610ba20dc63f8ac5}{Set\+Mesh}} (Ogre\+::\+Manual\+Object $\ast$newmesh)
+\begin{DoxyCompactList}\small\item\em Sets the reference to a Manual\+Object(mesh) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics_object_ab6f9baed8f46fa63bc2ad1002e3c1914}{Set\+Move\+Speed}} (float newmovespeed)
+\begin{DoxyCompactList}\small\item\em Sets the movespeed of the object \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_physics_object_ad14ee6f41c3cc40608df2985c6dfec23}{Get\+Move\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em Gets the Move Speed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_physics_object_a6bff3b7badfed2be129b770c43e5e448}{Set\+Velocity}} (Ogre\+::\+Vector3 newvelocity)
+\begin{DoxyCompactList}\small\item\em Sets the velocity \end{DoxyCompactList}\item 
+Ogre\+::\+Vector3 \mbox{\hyperlink{class_physics_object_af7c1aed7fb4f99232a95f284a843cbcd}{Get\+Velocity}} ()
+\begin{DoxyCompactList}\small\item\em Gets the velocity \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class used to implement objects to be affected by physics 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_physics_object_a0dd37cc0f9535b676d3df937eaeb4780}\label{class_physics_object_a0dd37cc0f9535b676d3df937eaeb4780}} 
+\index{PhysicsObject@{PhysicsObject}!PhysicsObject@{PhysicsObject}}
+\index{PhysicsObject@{PhysicsObject}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{PhysicsObject()}{PhysicsObject()}}
+{\footnotesize\ttfamily Physics\+Object\+::\+Physics\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_physics_object_a2172e8b71176e3a54d6a8f5ff15d4178}\label{class_physics_object_a2172e8b71176e3a54d6a8f5ff15d4178}} 
+\index{PhysicsObject@{PhysicsObject}!````~PhysicsObject@{$\sim$PhysicsObject}}
+\index{````~PhysicsObject@{$\sim$PhysicsObject}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$PhysicsObject()}{~PhysicsObject()}}
+{\footnotesize\ttfamily Physics\+Object\+::$\sim$\+Physics\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physics_object_aba93a440a66573666661bedb2aca0455}\label{class_physics_object_aba93a440a66573666661bedb2aca0455}} 
+\index{PhysicsObject@{PhysicsObject}!GetMesh@{GetMesh}}
+\index{GetMesh@{GetMesh}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{GetMesh()}{GetMesh()}}
+{\footnotesize\ttfamily Ogre\+::\+Manual\+Object $\ast$ Physics\+Object\+::\+Get\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the attached Manual object(mesh) 
+
+\begin{DoxyReturn}{Returns}
+Returns mesh member 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_physics_object_ad14ee6f41c3cc40608df2985c6dfec23}\label{class_physics_object_ad14ee6f41c3cc40608df2985c6dfec23}} 
+\index{PhysicsObject@{PhysicsObject}!GetMoveSpeed@{GetMoveSpeed}}
+\index{GetMoveSpeed@{GetMoveSpeed}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{GetMoveSpeed()}{GetMoveSpeed()}}
+{\footnotesize\ttfamily float Physics\+Object\+::\+Get\+Move\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the Move Speed 
+
+\begin{DoxyReturn}{Returns}
+Returns move\+Speed
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_physics_object_a221fdbaad55f9376e5e9441558e1b596}\label{class_physics_object_a221fdbaad55f9376e5e9441558e1b596}} 
+\index{PhysicsObject@{PhysicsObject}!getNode@{getNode}}
+\index{getNode@{getNode}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{getNode()}{getNode()}}
+{\footnotesize\ttfamily Ogre\+::\+Scene\+Node $\ast$ Physics\+Object\+::get\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a reference to the attached Scene\+Node 
+
+\begin{DoxyReturn}{Returns}
+Returns node member
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_physics_object_af7c1aed7fb4f99232a95f284a843cbcd}\label{class_physics_object_af7c1aed7fb4f99232a95f284a843cbcd}} 
+\index{PhysicsObject@{PhysicsObject}!GetVelocity@{GetVelocity}}
+\index{GetVelocity@{GetVelocity}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{GetVelocity()}{GetVelocity()}}
+{\footnotesize\ttfamily Ogre\+::\+Vector3 Physics\+Object\+::\+Get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the velocity 
+
+\begin{DoxyReturn}{Returns}
+Returns velocity
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_physics_object_aafb8ed1e160e0dd7610ba20dc63f8ac5}\label{class_physics_object_aafb8ed1e160e0dd7610ba20dc63f8ac5}} 
+\index{PhysicsObject@{PhysicsObject}!SetMesh@{SetMesh}}
+\index{SetMesh@{SetMesh}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{SetMesh()}{SetMesh()}}
+{\footnotesize\ttfamily void Physics\+Object\+::\+Set\+Mesh (\begin{DoxyParamCaption}\item[{Ogre\+::\+Manual\+Object $\ast$}]{newmesh }\end{DoxyParamCaption})}
+
+
+
+Sets the reference to a Manual\+Object(mesh) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em newmesh} & Reference to the Manual\+Object to be attached\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_physics_object_ab6f9baed8f46fa63bc2ad1002e3c1914}\label{class_physics_object_ab6f9baed8f46fa63bc2ad1002e3c1914}} 
+\index{PhysicsObject@{PhysicsObject}!SetMoveSpeed@{SetMoveSpeed}}
+\index{SetMoveSpeed@{SetMoveSpeed}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{SetMoveSpeed()}{SetMoveSpeed()}}
+{\footnotesize\ttfamily void Physics\+Object\+::\+Set\+Move\+Speed (\begin{DoxyParamCaption}\item[{float}]{newmovespeed }\end{DoxyParamCaption})}
+
+
+
+Sets the movespeed of the object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em newmovespeed} & Takes in float to assign to move\+Speed\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_physics_object_a17389c040b67656b2856537f799fa9d2}\label{class_physics_object_a17389c040b67656b2856537f799fa9d2}} 
+\index{PhysicsObject@{PhysicsObject}!setNode@{setNode}}
+\index{setNode@{setNode}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{setNode()}{setNode()}}
+{\footnotesize\ttfamily void Physics\+Object\+::set\+Node (\begin{DoxyParamCaption}\item[{Ogre\+::\+Scene\+Node $\ast$}]{newnode }\end{DoxyParamCaption})}
+
+
+
+Sets the reference to a Scene\+Node 
+
+
+\begin{DoxyParams}{Parameters}
+{\em newnode} & Reference to the Scene\+Node to be attached\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_physics_object_a6bff3b7badfed2be129b770c43e5e448}\label{class_physics_object_a6bff3b7badfed2be129b770c43e5e448}} 
+\index{PhysicsObject@{PhysicsObject}!SetVelocity@{SetVelocity}}
+\index{SetVelocity@{SetVelocity}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{SetVelocity()}{SetVelocity()}}
+{\footnotesize\ttfamily void Physics\+Object\+::\+Set\+Velocity (\begin{DoxyParamCaption}\item[{Ogre\+::\+Vector3}]{newvelocity }\end{DoxyParamCaption})}
+
+
+
+Sets the velocity 
+
+
+\begin{DoxyParams}{Parameters}
+{\em newvelocity} & Takes in Ogre\+::\+Vector3 and assigns it to velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_physics_object_a6a6eedf5123411636d9fca05d860070e}\label{class_physics_object_a6a6eedf5123411636d9fca05d860070e}} 
+\index{PhysicsObject@{PhysicsObject}!update@{update}}
+\index{update@{update}!PhysicsObject@{PhysicsObject}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Physics\+Object\+::update (\begin{DoxyParamCaption}\item[{const Ogre\+::\+Frame\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+virtual update function to be inherited 
+
+
+
+Implemented in \mbox{\hyperlink{class_ball_ad6a6ba35fbf7d09ab9cf1ed84df7bda7}{Ball}}, and \mbox{\hyperlink{class_paddle_a24c6084d441cff97b7609297743807a9}{Paddle}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Orgre\+Template\+V2/\mbox{\hyperlink{_physics_object_8h}{Physics\+Object.\+h}}\item 
+Orgre\+Template\+V2/\mbox{\hyperlink{_physics_object_8cpp}{Physics\+Object.\+cpp}}\end{DoxyCompactItemize}

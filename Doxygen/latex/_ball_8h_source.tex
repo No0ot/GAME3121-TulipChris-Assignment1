@@ -1,0 +1,31 @@
+\hypertarget{_ball_8h_source}{}\doxysection{Ball.\+h}
+\label{_ball_8h_source}\index{OrgreTemplateV2/Ball.h@{OrgreTemplateV2/Ball.h}}
+\mbox{\hyperlink{_ball_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_physics_object_8h}{PhysicsObject.h}}"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{keyword}{class }\mbox{\hyperlink{class_ball}{Ball}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_physics_object}{PhysicsObject}}}
+\DoxyCodeLine{6 \{}
+\DoxyCodeLine{7 \textcolor{keyword}{private}:}
+\DoxyCodeLine{8     \mbox{\hyperlink{class_physics_object}{PhysicsObject}}* paddleReference; }
+\DoxyCodeLine{9     \textcolor{keywordtype}{bool} inPlay; }
+\DoxyCodeLine{10     \textcolor{keywordtype}{int} lives = 5; }
+\DoxyCodeLine{11     \textcolor{keywordtype}{int} score; }
+\DoxyCodeLine{12 \textcolor{keyword}{public}:}
+\DoxyCodeLine{13     \mbox{\hyperlink{class_ball_a485890ba250f1539ad03047ed6e759f0}{Ball}}(\mbox{\hyperlink{class_physics_object}{PhysicsObject}}* ref);}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}{\string~Ball}}();}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_ball_ad6a6ba35fbf7d09ab9cf1ed84df7bda7}{update}}(\textcolor{keyword}{const} Ogre::FrameEvent\& evt) \textcolor{keyword}{override};}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_ball_a2e8d5c1d55cdb1d71a1078418d1b11eb}{CheckBounds}}();}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_ball_abf5cb8c9990417bd1788149e2de37b5c}{checkCollision}}();}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_ball_a1d8818d54e3214842a77c73de3441770}{ReflectVelocity}}(\textcolor{keywordtype}{bool} reflectX);}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_ball_a46200086307d46625e592083fa88b356}{setPaddleReference}}(\mbox{\hyperlink{class_physics_object}{PhysicsObject}}* ref);}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_ball_aa26cab364ddfa878a21e22c941fba69c}{ResetBall}}();}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_ball_a1462da02d7e27bbd0317a7a6dbdc182c}{BeginPlay}}();}
+\DoxyCodeLine{48     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_ball_a06812f26df422f7d45619acedd45eb19}{GetLives}}();}
+\DoxyCodeLine{52     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_ball_a1b48457bb5a539fdda13b8cea12dadd6}{GetScore}}();}
+\DoxyCodeLine{53 \};}
+\DoxyCodeLine{54 }
+
+\end{DoxyCode}

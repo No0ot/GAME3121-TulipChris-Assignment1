@@ -1,0 +1,34 @@
+\hypertarget{_physics_object_8h_source}{}\doxysection{Physics\+Object.\+h}
+\label{_physics_object_8h_source}\index{OrgreTemplateV2/PhysicsObject.h@{OrgreTemplateV2/PhysicsObject.h}}
+\mbox{\hyperlink{_physics_object_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}Ogre.h"{}}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{using namespace }Ogre;}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_physics_object}{PhysicsObject}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 \textcolor{keyword}{private}:}
+\DoxyCodeLine{12     Ogre::SceneNode* node; }
+\DoxyCodeLine{13     Ogre::ManualObject* mesh; }
+\DoxyCodeLine{15     \textcolor{keywordtype}{float} moveSpeed; }
+\DoxyCodeLine{16     Ogre::Vector3 velocity; }
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_physics_object_a0dd37cc0f9535b676d3df937eaeb4780}{PhysicsObject}}();}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_physics_object_a2172e8b71176e3a54d6a8f5ff15d4178}{\string~PhysicsObject}}();}
+\DoxyCodeLine{23     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_physics_object_a6a6eedf5123411636d9fca05d860070e}{update}}(\textcolor{keyword}{const} Ogre::FrameEvent\& evt) = 0; }
+\DoxyCodeLine{27     Ogre::SceneNode* \mbox{\hyperlink{class_physics_object_a221fdbaad55f9376e5e9441558e1b596}{getNode}}();}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_physics_object_a17389c040b67656b2856537f799fa9d2}{setNode}}(Ogre::SceneNode* newnode);}
+\DoxyCodeLine{35     Ogre::ManualObject* \mbox{\hyperlink{class_physics_object_aba93a440a66573666661bedb2aca0455}{GetMesh}}();}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_physics_object_aafb8ed1e160e0dd7610ba20dc63f8ac5}{SetMesh}}(Ogre::ManualObject* newmesh);}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_physics_object_ab6f9baed8f46fa63bc2ad1002e3c1914}{SetMoveSpeed}}(\textcolor{keywordtype}{float} newmovespeed);}
+\DoxyCodeLine{47     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_physics_object_ad14ee6f41c3cc40608df2985c6dfec23}{GetMoveSpeed}}();}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_physics_object_a6bff3b7badfed2be129b770c43e5e448}{SetVelocity}}(Ogre::Vector3 newvelocity);}
+\DoxyCodeLine{55     Ogre::Vector3 \mbox{\hyperlink{class_physics_object_af7c1aed7fb4f99232a95f284a843cbcd}{GetVelocity}}();}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 }
+
+\end{DoxyCode}

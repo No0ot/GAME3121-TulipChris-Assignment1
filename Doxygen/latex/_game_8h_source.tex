@@ -1,0 +1,69 @@
+\hypertarget{_game_8h_source}{}\doxysection{Game.\+h}
+\label{_game_8h_source}\index{OrgreTemplateV2/Game.h@{OrgreTemplateV2/Game.h}}
+\mbox{\hyperlink{_game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}Ogre.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}OgreApplicationContext.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}OgreInput.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}OgreRTShaderSystem.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}OgreTrays.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_ball_8h}{Ball.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_paddle_8h}{Paddle.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{using namespace }Ogre;}
+\DoxyCodeLine{12 \textcolor{keyword}{using namespace }OgreBites;}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_game}{Game}} }
+\DoxyCodeLine{17     : \textcolor{keyword}{public} ApplicationContext}
+\DoxyCodeLine{18     , \textcolor{keyword}{public} InputListener}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20 \textcolor{keyword}{private}:}
+\DoxyCodeLine{21     SceneManager* scnMgr;}
+\DoxyCodeLine{22     Root* root;}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     std::vector<PhysicsObject*> physicsObjects;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26     \mbox{\hyperlink{class_paddle}{Paddle}}* paddleObject;}
+\DoxyCodeLine{27     Ogre::SceneNode* paddleNode;}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_ball}{Ball}}* ballObject;}
+\DoxyCodeLine{29     Ogre::SceneNode* ballNode;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     TrayManager* mTrayMgr;}
+\DoxyCodeLine{32     TrayListener myTrayListener;}
+\DoxyCodeLine{33     Label* mInfoLabel;}
+\DoxyCodeLine{34     Label* mFpsLabel;}
+\DoxyCodeLine{35     Label* mFps;}
+\DoxyCodeLine{36     String fpsnum;}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     Label* mScoreLabel;}
+\DoxyCodeLine{39     Label* mScore;}
+\DoxyCodeLine{40     String scorenum;}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     Label* mTpuLabel;}
+\DoxyCodeLine{43     Label* mTpu;}
+\DoxyCodeLine{44     String Tpunum;}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46     Label* mLivesLabel;}
+\DoxyCodeLine{47     Label* mLives;}
+\DoxyCodeLine{48     String livesnum;}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{keyword}{public}:}
+\DoxyCodeLine{51     \mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}}();}
+\DoxyCodeLine{52     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_game_a72772b628443c3675976d6b5e6c9ec2a}{\string~Game}}() \{\}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_ae4618ba40eabbbe65e35f1bb239aa29b}{setup}}();}
+\DoxyCodeLine{61     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_game_a2ba00c3475d222573e5ad54b88b389b7}{keyPressed}}(\textcolor{keyword}{const} KeyboardEvent\& evt);}
+\DoxyCodeLine{65     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_game_a495b7d5ab243a04b0c5fc5e28c4f73b4}{keyReleased}}(\textcolor{keyword}{const} KeyboardEvent\& evt);}
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a1df5b2aa5e4bb03bc39fafbf4aa1f943}{CreateScene}}();}
+\DoxyCodeLine{73     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a07053ea748396f8a7af5ffa0ac86fc08}{CreateCamera}}();}
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_adadc9291cf53d2843b146e25052a72a3}{CreateFrameListener}}();}
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a03b7d35d468b04c2bea4e409d7f5e3d6}{CreateBackground}}();}
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a01749ddd69800dfdfd4bb290c1ea6ae5}{CreateLights}}();}
+\DoxyCodeLine{89     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a1b02eea54a972fd8c48d3fedcfd55d04}{CreatePhysicsObjects}}();}
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_ad5329359dfd334128400a082fa3fd2c9}{CreateUI}}();}
+\DoxyCodeLine{98     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_ad61ea3e9ad3e02e5e4a5430a2a1d6023}{UpdateUI}}(\textcolor{keyword}{const} Ogre::FrameEvent\& evt);}
+\DoxyCodeLine{99 \};}
+\DoxyCodeLine{100 }
+
+\end{DoxyCode}

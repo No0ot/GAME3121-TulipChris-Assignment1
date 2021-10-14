@@ -1,0 +1,165 @@
+\hypertarget{class_ball}{}\doxysection{Ball Class Reference}
+\label{class_ball}\index{Ball@{Ball}}
+
+
+{\ttfamily \#include $<$Ball.\+h$>$}
+
+Inheritance diagram for Ball\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ball}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ball_a485890ba250f1539ad03047ed6e759f0}{Ball}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$ref)
+\item 
+\mbox{\hyperlink{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}{$\sim$\+Ball}} ()
+\item 
+void \mbox{\hyperlink{class_ball_ad6a6ba35fbf7d09ab9cf1ed84df7bda7}{update}} (const Ogre\+::\+Frame\+Event \&evt) override
+\begin{DoxyCompactList}\small\item\em Function to be called every frame.\+Handles physics movement \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a2e8d5c1d55cdb1d71a1078418d1b11eb}{Check\+Bounds}} ()
+\begin{DoxyCompactList}\small\item\em Ensures the ball to stay within the bounds of the screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_abf5cb8c9990417bd1788149e2de37b5c}{check\+Collision}} ()
+\begin{DoxyCompactList}\small\item\em Checks collision against the paddle using the paddle\+Reference \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a1d8818d54e3214842a77c73de3441770}{Reflect\+Velocity}} (bool reflectX)
+\begin{DoxyCompactList}\small\item\em Reflects the velocity based upon surface when colliding \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a46200086307d46625e592083fa88b356}{set\+Paddle\+Reference}} (\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$ref)
+\begin{DoxyCompactList}\small\item\em Sets the reference to the paddle object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_aa26cab364ddfa878a21e22c941fba69c}{Reset\+Ball}} ()
+\begin{DoxyCompactList}\small\item\em Resets the ball when a life is to be lost \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ball_a1462da02d7e27bbd0317a7a6dbdc182c}{Begin\+Play}} ()
+\begin{DoxyCompactList}\small\item\em Starts the ball movement to begin the game \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ball_a06812f26df422f7d45619acedd45eb19}{Get\+Lives}} ()
+\begin{DoxyCompactList}\small\item\em Returns lives \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ball_a1b48457bb5a539fdda13b8cea12dadd6}{Get\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Returns score \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ball_a485890ba250f1539ad03047ed6e759f0}\label{class_ball_a485890ba250f1539ad03047ed6e759f0}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{ref }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}\label{class_ball_a20f2f6ac0bf648f406a8e12e63429fcd}} 
+\index{Ball@{Ball}!````~Ball@{$\sim$Ball}}
+\index{````~Ball@{$\sim$Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ball()}{~Ball()}}
+{\footnotesize\ttfamily Ball\+::$\sim$\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ball_a1462da02d7e27bbd0317a7a6dbdc182c}\label{class_ball_a1462da02d7e27bbd0317a7a6dbdc182c}} 
+\index{Ball@{Ball}!BeginPlay@{BeginPlay}}
+\index{BeginPlay@{BeginPlay}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{BeginPlay()}{BeginPlay()}}
+{\footnotesize\ttfamily void Ball\+::\+Begin\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the ball movement to begin the game 
+
+\mbox{\Hypertarget{class_ball_a2e8d5c1d55cdb1d71a1078418d1b11eb}\label{class_ball_a2e8d5c1d55cdb1d71a1078418d1b11eb}} 
+\index{Ball@{Ball}!CheckBounds@{CheckBounds}}
+\index{CheckBounds@{CheckBounds}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{CheckBounds()}{CheckBounds()}}
+{\footnotesize\ttfamily void Ball\+::\+Check\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ensures the ball to stay within the bounds of the screen 
+
+\mbox{\Hypertarget{class_ball_abf5cb8c9990417bd1788149e2de37b5c}\label{class_ball_abf5cb8c9990417bd1788149e2de37b5c}} 
+\index{Ball@{Ball}!checkCollision@{checkCollision}}
+\index{checkCollision@{checkCollision}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{checkCollision()}{checkCollision()}}
+{\footnotesize\ttfamily void Ball\+::check\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks collision against the paddle using the paddle\+Reference 
+
+\mbox{\Hypertarget{class_ball_a06812f26df422f7d45619acedd45eb19}\label{class_ball_a06812f26df422f7d45619acedd45eb19}} 
+\index{Ball@{Ball}!GetLives@{GetLives}}
+\index{GetLives@{GetLives}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{GetLives()}{GetLives()}}
+{\footnotesize\ttfamily int Ball\+::\+Get\+Lives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns lives 
+
+\mbox{\Hypertarget{class_ball_a1b48457bb5a539fdda13b8cea12dadd6}\label{class_ball_a1b48457bb5a539fdda13b8cea12dadd6}} 
+\index{Ball@{Ball}!GetScore@{GetScore}}
+\index{GetScore@{GetScore}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{GetScore()}{GetScore()}}
+{\footnotesize\ttfamily int Ball\+::\+Get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns score 
+
+\mbox{\Hypertarget{class_ball_a1d8818d54e3214842a77c73de3441770}\label{class_ball_a1d8818d54e3214842a77c73de3441770}} 
+\index{Ball@{Ball}!ReflectVelocity@{ReflectVelocity}}
+\index{ReflectVelocity@{ReflectVelocity}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{ReflectVelocity()}{ReflectVelocity()}}
+{\footnotesize\ttfamily void Ball\+::\+Reflect\+Velocity (\begin{DoxyParamCaption}\item[{bool}]{reflectX }\end{DoxyParamCaption})}
+
+
+
+Reflects the velocity based upon surface when colliding 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reflectX} & Used to see if ball needs to be reflected on X axis(true) or Y axis(false)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ball_aa26cab364ddfa878a21e22c941fba69c}\label{class_ball_aa26cab364ddfa878a21e22c941fba69c}} 
+\index{Ball@{Ball}!ResetBall@{ResetBall}}
+\index{ResetBall@{ResetBall}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{ResetBall()}{ResetBall()}}
+{\footnotesize\ttfamily void Ball\+::\+Reset\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the ball when a life is to be lost 
+
+\mbox{\Hypertarget{class_ball_a46200086307d46625e592083fa88b356}\label{class_ball_a46200086307d46625e592083fa88b356}} 
+\index{Ball@{Ball}!setPaddleReference@{setPaddleReference}}
+\index{setPaddleReference@{setPaddleReference}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{setPaddleReference()}{setPaddleReference()}}
+{\footnotesize\ttfamily void Ball\+::set\+Paddle\+Reference (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$}]{ref }\end{DoxyParamCaption})}
+
+
+
+Sets the reference to the paddle object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref} & Passed in object from scene\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ball_ad6a6ba35fbf7d09ab9cf1ed84df7bda7}\label{class_ball_ad6a6ba35fbf7d09ab9cf1ed84df7bda7}} 
+\index{Ball@{Ball}!update@{update}}
+\index{update@{update}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Ball\+::update (\begin{DoxyParamCaption}\item[{const Ogre\+::\+Frame\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Function to be called every frame.\+Handles physics movement 
+
+
+
+Implements \mbox{\hyperlink{class_physics_object_a6a6eedf5123411636d9fca05d860070e}{Physics\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Orgre\+Template\+V2/\mbox{\hyperlink{_ball_8h}{Ball.\+h}}\item 
+Orgre\+Template\+V2/\mbox{\hyperlink{_ball_8cpp}{Ball.\+cpp}}\end{DoxyCompactItemize}

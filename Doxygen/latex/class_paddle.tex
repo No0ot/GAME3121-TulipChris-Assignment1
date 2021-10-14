@@ -1,0 +1,125 @@
+\hypertarget{class_paddle}{}\doxysection{Paddle Class Reference}
+\label{class_paddle}\index{Paddle@{Paddle}}
+
+
+{\ttfamily \#include $<$Paddle.\+h$>$}
+
+Inheritance diagram for Paddle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_paddle}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_paddle_a53895671ddfde9ba668546065ec4f164}{Paddle}} ()
+\item 
+\mbox{\hyperlink{class_paddle_ac03c6b92f0b9cd2e67edff4c318ad030}{$\sim$\+Paddle}} ()
+\item 
+void \mbox{\hyperlink{class_paddle_a24c6084d441cff97b7609297743807a9}{update}} (const Ogre\+::\+Frame\+Event \&evt) override
+\begin{DoxyCompactList}\small\item\em Function to be called every frame.\+Handles physics movement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_af40c8d53fc3bd6b79ece71fb2c83feb8}{Check\+Bounds}} ()
+\begin{DoxyCompactList}\small\item\em Ensures the paddle does not leave the bounds of the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_a3532e4cf3398e85d142647fd30681071}{Move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Sets the velocity to be moved left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_paddle_a2a09c5e4ea6bdd88da8626375df1bee0}{Move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Sets the velocity to be moved right. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_paddle_ac13784340807aa93b89117f51f6b8630}{move\+Left}}
+\begin{DoxyCompactList}\small\item\em Bool used for moving paddle left. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_paddle_aa5c20da64de1b7db38bdbda1d0bb4dc6}{move\+Right}}
+\begin{DoxyCompactList}\small\item\em Bool used for moving paddle right. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_paddle_a53895671ddfde9ba668546065ec4f164}\label{class_paddle_a53895671ddfde9ba668546065ec4f164}} 
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{Paddle()}{Paddle()}}
+{\footnotesize\ttfamily Paddle\+::\+Paddle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_paddle_ac03c6b92f0b9cd2e67edff4c318ad030}\label{class_paddle_ac03c6b92f0b9cd2e67edff4c318ad030}} 
+\index{Paddle@{Paddle}!````~Paddle@{$\sim$Paddle}}
+\index{````~Paddle@{$\sim$Paddle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{$\sim$Paddle()}{~Paddle()}}
+{\footnotesize\ttfamily Paddle\+::$\sim$\+Paddle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paddle_af40c8d53fc3bd6b79ece71fb2c83feb8}\label{class_paddle_af40c8d53fc3bd6b79ece71fb2c83feb8}} 
+\index{Paddle@{Paddle}!CheckBounds@{CheckBounds}}
+\index{CheckBounds@{CheckBounds}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{CheckBounds()}{CheckBounds()}}
+{\footnotesize\ttfamily void Paddle\+::\+Check\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ensures the paddle does not leave the bounds of the screen. 
+
+\mbox{\Hypertarget{class_paddle_a3532e4cf3398e85d142647fd30681071}\label{class_paddle_a3532e4cf3398e85d142647fd30681071}} 
+\index{Paddle@{Paddle}!MoveLeft@{MoveLeft}}
+\index{MoveLeft@{MoveLeft}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{MoveLeft()}{MoveLeft()}}
+{\footnotesize\ttfamily void Paddle\+::\+Move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the velocity to be moved left. 
+
+\mbox{\Hypertarget{class_paddle_a2a09c5e4ea6bdd88da8626375df1bee0}\label{class_paddle_a2a09c5e4ea6bdd88da8626375df1bee0}} 
+\index{Paddle@{Paddle}!MoveRight@{MoveRight}}
+\index{MoveRight@{MoveRight}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{MoveRight()}{MoveRight()}}
+{\footnotesize\ttfamily void Paddle\+::\+Move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the velocity to be moved right. 
+
+\mbox{\Hypertarget{class_paddle_a24c6084d441cff97b7609297743807a9}\label{class_paddle_a24c6084d441cff97b7609297743807a9}} 
+\index{Paddle@{Paddle}!update@{update}}
+\index{update@{update}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Paddle\+::update (\begin{DoxyParamCaption}\item[{const Ogre\+::\+Frame\+Event \&}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Function to be called every frame.\+Handles physics movement. 
+
+
+
+Implements \mbox{\hyperlink{class_physics_object_a6a6eedf5123411636d9fca05d860070e}{Physics\+Object}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_paddle_ac13784340807aa93b89117f51f6b8630}\label{class_paddle_ac13784340807aa93b89117f51f6b8630}} 
+\index{Paddle@{Paddle}!moveLeft@{moveLeft}}
+\index{moveLeft@{moveLeft}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{moveLeft}{moveLeft}}
+{\footnotesize\ttfamily bool Paddle\+::move\+Left}
+
+
+
+Bool used for moving paddle left. 
+
+\mbox{\Hypertarget{class_paddle_aa5c20da64de1b7db38bdbda1d0bb4dc6}\label{class_paddle_aa5c20da64de1b7db38bdbda1d0bb4dc6}} 
+\index{Paddle@{Paddle}!moveRight@{moveRight}}
+\index{moveRight@{moveRight}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{moveRight}{moveRight}}
+{\footnotesize\ttfamily bool Paddle\+::move\+Right}
+
+
+
+Bool used for moving paddle right. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Orgre\+Template\+V2/\mbox{\hyperlink{_paddle_8h}{Paddle.\+h}}\item 
+Orgre\+Template\+V2/\mbox{\hyperlink{_paddle_8cpp}{Paddle.\+cpp}}\end{DoxyCompactItemize}
