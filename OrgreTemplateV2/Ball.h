@@ -1,7 +1,9 @@
 #pragma once
 #include "PhysicsObject.h"
 
-
+/// <summary>
+/// Class inheriting from PhysicsObject to implement the ball functionality
+/// </summary>
 class Ball : public PhysicsObject
 {
 private:

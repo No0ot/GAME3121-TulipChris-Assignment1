@@ -2,6 +2,9 @@
 #include "PhysicsObject.h"
 #include "Mesh.h"
 
+/// <summary>
+/// Class inheriting from PhysicsObject to implement the paddle functionality
+/// </summary>
 class Paddle : public PhysicsObject
 {
 private:
