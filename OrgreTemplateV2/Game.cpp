@@ -1,5 +1,9 @@
+/*! Game class used to build the application and set-up the game world */
 #include "Game.h"
 
+/// Custom FrameListener. 
+/// Keeps references to physics objects to call their update functions. 
+/// Also keeps a reference to the game instance to call the update on the UI
 class PhysicsFrameListener : public Ogre::FrameListener
 {
 private:
@@ -26,12 +30,16 @@ public:
         return true;
     }
 };
-
+/// Game class Constructor
+/// 
+/// 
 Game::Game()
     : ApplicationContext("GAME3121 - TulipChris - Assignment1")
 {
 }
-
+/// Main setup function
+/// calls the super setup function as well as gets references to the root and SceneManager
+/// 
 void Game::setup()
 {
     // do not forget to call the base first
@@ -50,7 +58,9 @@ void Game::setup()
     CreateCamera();
     CreateFrameListener();
 }
-
+/// Input detection function for keydown
+/// Handles input detection for keyboard buttons pressed down
+/// Basic Controls for the game
 bool Game::keyPressed(const KeyboardEvent& evt)
 {
 
@@ -73,7 +83,9 @@ bool Game::keyPressed(const KeyboardEvent& evt)
     }
     return true;
 }
-
+/// Input detection for Keyup
+/// used to smooth movement of the paddle object
+/// 
 bool Game::keyReleased(const KeyboardEvent& evt)
 {
     switch (evt.keysym.sym)
@@ -89,7 +101,9 @@ bool Game::keyReleased(const KeyboardEvent& evt)
     }
     return true;
 }
-
+/// Create Scene Function
+/// Calls the other functions that create the main objects in the game
+///
 void Game::CreateScene()
 {
     CreateLights();
@@ -97,30 +111,32 @@ void Game::CreateScene()
     CreatePhysicsObjects();
     CreateUI();
 }
-
+/// Create Camera Function:
+/// Creates the game world camera and binds it to a scenenode
+///
 void Game::CreateCamera()
 {
-    //! [camera]
     SceneNode* camNode = scnMgr->getRootSceneNode()->createChildSceneNode();
-    // create the camera
     Camera* cam = scnMgr->createCamera("myCam");
-    cam->setNearClipDistance(5); // specific to this sample
+    cam->setNearClipDistance(5);
     cam->setAutoAspectRatio(true);
     camNode->attachObject(cam);
     camNode->setPosition(0, 0, 300);
 
-    // and tell it to render into the main window
     getRenderWindow()->addViewport(cam);
-    //! [camera]
-
 }
-
+/// Creates the custom observer class framelistener :
+/// Creates the custom PhysicsFrameListener while passing in a vector of all the physics objects along with a refrence to the game instance
+///
 void Game::CreateFrameListener()
 {
     Ogre::FrameListener* FrameListener = new PhysicsFrameListener(physicsObjects, this);
     root->addFrameListener(FrameListener);
 }
 
+/// Creates the Background Plane
+/// creates a plane for the background and binds a texture to the material
+/// 
 void Game::CreateBackground()
 {
     //The first thing we'll do is create an abstract Plane object. This is not the mesh, it is more of a blueprint.
@@ -143,23 +159,20 @@ void Game::CreateBackground()
     //And finally we need to give our ground a material.
     groundEntity->setMaterialName("Examples/Rockwall");
 }
-
+/// Create Lights Function :
+/// Creates all the lights needed for the scene
+/// 
 void Game::CreateLights()
 {
-    // -- tutorial section start --
-//! [turnlights]
-    scnMgr->setAmbientLight(ColourValue(0.5, 0.5, 0.5));
-    //! [turnlights]
 
-    //! [newlight]
+    scnMgr->setAmbientLight(ColourValue(0.5, 0.5, 0.5));
+
+
     Light* light = scnMgr->createLight("MainLight");
     SceneNode* mainlightNode = scnMgr->getRootSceneNode()->createChildSceneNode();
     mainlightNode->attachObject(light);
-    //! [newlight]
 
-    //! [lightpos]
     mainlightNode->setPosition(-80, 80, 50);
-    //! [lightpos]
     Light* light1 = scnMgr->createLight("Light1");
     light1->setType(Ogre::Light::LT_POINT);
     // Set Light Color
@@ -168,14 +181,15 @@ void Game::CreateLights()
     light1->setSpecularColour(1.0f, 0.0f, 0.0f);
     // Set Light (Range, Brightness, Fade Speed, Rapid Fade Speed)
     light1->setAttenuation(10, 0.5, 0.045, 0.0);
-    //! 
     Entity* lightEnt = scnMgr->createEntity("LightEntity", "sphere.mesh");
     SceneNode* lightNode = scnMgr->createSceneNode("LightNode");
     lightNode->attachObject(lightEnt);
     lightNode->attachObject(light1);
     lightNode->setScale(0.01f, 0.01f, 0.01f);
 }
-
+/// Create Physics Objects function:
+/// Creates the custom meshes and objects used within the scene
+///
 void Game::CreatePhysicsObjects()
 {
     Ogre::ManualObject* cubeMesh = MyMesh::createCubeMesh("Cube", "FlatVertexColour");
@@ -201,7 +215,9 @@ void Game::CreatePhysicsObjects()
     physicsObjects.push_back(paddleObject);
     physicsObjects.push_back(ballObject);
 }
-
+/// Creates the UI:
+/// Creates the traymanager and the different labels present within the scene
+///
 void Game::CreateUI()
 {
     mTrayMgr = new OgreBites::TrayManager("InterfaceName", getRenderWindow());
@@ -226,12 +242,15 @@ void Game::CreateUI()
     mLives = mTrayMgr->createLabel(TL_TOPLEFT, "lives", livesnum, 150);
 
 }
-
+/// A function to update the UI
+/// this function updates the various UI elements per frame.
+/// It is used within the physics frame listener
+/// 
 void Game::UpdateUI(const Ogre::FrameEvent& evt)
 {
-    livesnum = Ogre::StringConverter::toString(ballObject->lives);
+    livesnum = Ogre::StringConverter::toString(ballObject->GetLives());
     mLives->setCaption(livesnum);
-    scorenum = Ogre::StringConverter::toString(ballObject->score);
+    scorenum = Ogre::StringConverter::toString(ballObject->GetScore());
     mScore->setCaption(scorenum);
 
     Tpunum = Ogre::StringConverter::toString(evt.timeSinceLastFrame);

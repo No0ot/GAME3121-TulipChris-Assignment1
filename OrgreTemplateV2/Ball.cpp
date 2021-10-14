@@ -116,3 +116,13 @@ void Ball::BeginPlay()
 		inPlay = true;
 	}
 }
+
+int Ball::GetLives()
+{
+	return lives;
+}
+
+int Ball::GetScore()
+{
+	return score;
+}

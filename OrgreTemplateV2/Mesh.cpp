@@ -1,5 +1,11 @@
 #include "Mesh.h"
 
+/// Creats and returns a manual object to be used as the cube mesh
+/// 
+///
+/// <param name="name"> Name id for the manual object</param>
+/// <param name="matName"> The name of the material to be used</param>
+/// <returns> Returns the cube shaped manual object</returns>
 Ogre::ManualObject* MyMesh::createCubeMesh(Ogre::String name, Ogre::String matName)
 {
     Ogre::ManualObject* cube = new Ogre::ManualObject(name);
@@ -37,7 +43,13 @@ Ogre::ManualObject* MyMesh::createCubeMesh(Ogre::String name, Ogre::String matNa
 
     return cube;
 }
-
+/// Creats and returns a manual object to be used as the sphere mesh
+/// 
+/// 
+/// <param name="name">Name id for the manual object</param>
+/// <param name="matName">The name of the material to be used</param>
+/// <param name="r"> radius of the sphere</param>
+/// <returns>Returns the sphere shaped manual object</returns>
 Ogre::ManualObject* MyMesh::createSphereMesh(Ogre::String name, Ogre::String matName, const float r)
 {
     const int nRings = 16;
