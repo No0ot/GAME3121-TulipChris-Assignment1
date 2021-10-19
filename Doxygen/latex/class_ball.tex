@@ -40,6 +40,17 @@ int \mbox{\hyperlink{class_ball_a06812f26df422f7d45619acedd45eb19}{Get\+Lives}} 
 \begin{DoxyCompactList}\small\item\em Returns lives \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_ball_a1b48457bb5a539fdda13b8cea12dadd6}{Get\+Score}} ()
 \begin{DoxyCompactList}\small\item\em Returns score \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$ \mbox{\hyperlink{class_ball_a502b218e664e42bbf5cb83a50dbb577f}{paddle\+Reference}}
+\begin{DoxyCompactList}\small\item\em Pointer Reference to the \mbox{\hyperlink{class_paddle}{Paddle}} object for collision. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ball_a0d24dd187571e3be9a9eef3ac0285dad}{in\+Play}}
+\begin{DoxyCompactList}\small\item\em bool used to determine if ball is in play or not. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ball_ace40aa70515f9cd46dbad2ce94808823}{lives}} = 5
+\begin{DoxyCompactList}\small\item\em Int for game lives. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ball_a4a79e53819c9219bfdd2589c2308a737}{score}}
+\begin{DoxyCompactList}\small\item\em int for game score \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -167,7 +178,50 @@ Implements \mbox{\hyperlink{class_physics_object_a6a6eedf5123411636d9fca05d86007
 
 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_ball_a0d24dd187571e3be9a9eef3ac0285dad}\label{class_ball_a0d24dd187571e3be9a9eef3ac0285dad}} 
+\index{Ball@{Ball}!inPlay@{inPlay}}
+\index{inPlay@{inPlay}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{inPlay}{inPlay}}
+{\footnotesize\ttfamily bool Ball\+::in\+Play\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+bool used to determine if ball is in play or not. 
+
+\mbox{\Hypertarget{class_ball_ace40aa70515f9cd46dbad2ce94808823}\label{class_ball_ace40aa70515f9cd46dbad2ce94808823}} 
+\index{Ball@{Ball}!lives@{lives}}
+\index{lives@{lives}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{lives}{lives}}
+{\footnotesize\ttfamily int Ball\+::lives = 5\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Int for game lives. 
+
+\mbox{\Hypertarget{class_ball_a502b218e664e42bbf5cb83a50dbb577f}\label{class_ball_a502b218e664e42bbf5cb83a50dbb577f}} 
+\index{Ball@{Ball}!paddleReference@{paddleReference}}
+\index{paddleReference@{paddleReference}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{paddleReference}{paddleReference}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_physics_object}{Physics\+Object}}$\ast$ Ball\+::paddle\+Reference\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Pointer Reference to the \mbox{\hyperlink{class_paddle}{Paddle}} object for collision. 
+
+\mbox{\Hypertarget{class_ball_a4a79e53819c9219bfdd2589c2308a737}\label{class_ball_a4a79e53819c9219bfdd2589c2308a737}} 
+\index{Ball@{Ball}!score@{score}}
+\index{score@{score}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Ball\+::score\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+int for game score 
+
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Orgre\+Template\+V2/\mbox{\hyperlink{_ball_8h}{Ball.\+h}}\item 
-Orgre\+Template\+V2/\mbox{\hyperlink{_ball_8cpp}{Ball.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Programming Projects/\+GAME3121 -\/ Game Engine Development/\+GAME3121 -\/ Tulip\+Chris -\/ Assignment1/\+Orgre\+Template\+V2/\mbox{\hyperlink{_ball_8h}{Ball.\+h}}\item 
+D\+:/\+Programming Projects/\+GAME3121 -\/ Game Engine Development/\+GAME3121 -\/ Tulip\+Chris -\/ Assignment1/\+Orgre\+Template\+V2/\mbox{\hyperlink{_ball_8cpp}{Ball.\+cpp}}\end{DoxyCompactItemize}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GAME3121 - TulipChris - Assignment1: Member List</title>
+<title>GAME3121_Assignment1: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,10 +30,25 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GAME3121 - TulipChris - Assignment1
+   <div id="projectname">GAME3121_Assignment1
    </div>
-   <div id="projectbrief">Pong game made in Ogre</div>
+   <div id="projectbrief">OGRE based Pong game with a Paddle and Ball</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -40,17 +60,6 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -99,15 +108,23 @@ $(document).ready(function(){initNavTree('class_ball.html',''); initResizable();
   <tr class="odd"><td class="entry"><a class="el" href="class_physics_object.html#a221fdbaad55f9376e5e9441558e1b596">getNode</a>()</td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_ball.html#a1b48457bb5a539fdda13b8cea12dadd6">GetScore</a>()</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_physics_object.html#af7c1aed7fb4f99232a95f284a843cbcd">GetVelocity</a>()</td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_ball.html#a0d24dd187571e3be9a9eef3ac0285dad">inPlay</a></td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_ball.html#ace40aa70515f9cd46dbad2ce94808823">lives</a></td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_physics_object.html#a56c4bd088a5756477b883751991e04f3">mesh</a></td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_physics_object.html#a3bff1b4bc691a4253b2e2434e5d886bb">moveSpeed</a></td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_physics_object.html#a2d6995389d9f03a9682acd892cab1110">node</a></td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_ball.html#a502b218e664e42bbf5cb83a50dbb577f">paddleReference</a></td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_physics_object.html#a0dd37cc0f9535b676d3df937eaeb4780">PhysicsObject</a>()</td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_ball.html#a1d8818d54e3214842a77c73de3441770">ReflectVelocity</a>(bool reflectX)</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_ball.html#aa26cab364ddfa878a21e22c941fba69c">ResetBall</a>()</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_physics_object.html#aafb8ed1e160e0dd7610ba20dc63f8ac5">SetMesh</a>(Ogre::ManualObject *newmesh)</td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_physics_object.html#ab6f9baed8f46fa63bc2ad1002e3c1914">SetMoveSpeed</a>(float newmovespeed)</td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_physics_object.html#a17389c040b67656b2856537f799fa9d2">setNode</a>(Ogre::SceneNode *newnode)</td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_ball.html#a46200086307d46625e592083fa88b356">setPaddleReference</a>(PhysicsObject *ref)</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_physics_object.html#a6bff3b7badfed2be129b770c43e5e448">SetVelocity</a>(Ogre::Vector3 newvelocity)</td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_ball.html#ad6a6ba35fbf7d09ab9cf1ed84df7bda7">update</a>(const Ogre::FrameEvent &amp;evt) override</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_ball.html#a4a79e53819c9219bfdd2589c2308a737">score</a></td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_physics_object.html#aafb8ed1e160e0dd7610ba20dc63f8ac5">SetMesh</a>(Ogre::ManualObject *newmesh)</td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_physics_object.html#ab6f9baed8f46fa63bc2ad1002e3c1914">SetMoveSpeed</a>(float newmovespeed)</td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_physics_object.html#a17389c040b67656b2856537f799fa9d2">setNode</a>(Ogre::SceneNode *newnode)</td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_ball.html#a46200086307d46625e592083fa88b356">setPaddleReference</a>(PhysicsObject *ref)</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_physics_object.html#a6bff3b7badfed2be129b770c43e5e448">SetVelocity</a>(Ogre::Vector3 newvelocity)</td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_ball.html#ad6a6ba35fbf7d09ab9cf1ed84df7bda7">update</a>(const Ogre::FrameEvent &amp;evt) override</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_physics_object.html#aa011bb4782b68f4808c22c381f8f9669">velocity</a></td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_ball.html#a20f2f6ac0bf648f406a8e12e63429fcd">~Ball</a>()</td><td class="entry"><a class="el" href="class_ball.html">Ball</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_physics_object.html#a2172e8b71176e3a54d6a8f5ff15d4178">~PhysicsObject</a>()</td><td class="entry"><a class="el" href="class_physics_object.html">PhysicsObject</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GAME3121 - TulipChris - Assignment1: OrgreTemplateV2/PhysicsObject.h Source File</title>
+<title>GAME3121_Assignment1: D:/Programming Projects/GAME3121 - Game Engine Development/GAME3121 - TulipChris - Assignment1/OrgreTemplateV2/PhysicsObject.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,10 +30,25 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GAME3121 - TulipChris - Assignment1
+   <div id="projectname">GAME3121_Assignment1
    </div>
-   <div id="projectbrief">Pong game made in Ogre</div>
+   <div id="projectbrief">OGRE based Pong game with a Paddle and Ball</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -40,17 +60,6 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -94,10 +103,10 @@ $(document).ready(function(){initNavTree('_physics_object_8h_source.html',''); i
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_physics_object.html">    9</a></span><span class="keyword">class </span><a class="code hl_class" href="class_physics_object.html">PhysicsObject</a></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    Ogre::SceneNode* node; </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    Ogre::ManualObject* mesh; </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordtype">float</span> moveSpeed; </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    Ogre::Vector3 velocity; </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_physics_object.html#a2d6995389d9f03a9682acd892cab1110">   12</a></span>    Ogre::SceneNode* <a class="code hl_variable" href="class_physics_object.html#a2d6995389d9f03a9682acd892cab1110">node</a>; </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_physics_object.html#a56c4bd088a5756477b883751991e04f3">   13</a></span>    Ogre::ManualObject* <a class="code hl_variable" href="class_physics_object.html#a56c4bd088a5756477b883751991e04f3">mesh</a>; </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_physics_object.html#a3bff1b4bc691a4253b2e2434e5d886bb">   15</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_physics_object.html#a3bff1b4bc691a4253b2e2434e5d886bb">moveSpeed</a>; </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_physics_object.html#aa011bb4782b68f4808c22c381f8f9669">   16</a></span>    Ogre::Vector3 <a class="code hl_variable" href="class_physics_object.html#aa011bb4782b68f4808c22c381f8f9669">velocity</a>; </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <a class="code hl_function" href="class_physics_object.html#a0dd37cc0f9535b676d3df937eaeb4780">PhysicsObject</a>();</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_function" href="class_physics_object.html#a2172e8b71176e3a54d6a8f5ff15d4178">~PhysicsObject</a>();</div>
@@ -119,8 +128,12 @@ $(document).ready(function(){initNavTree('_physics_object_8h_source.html',''); i
 <div class="ttc" id="aclass_physics_object_html_a17389c040b67656b2856537f799fa9d2"><div class="ttname"><a href="class_physics_object.html#a17389c040b67656b2856537f799fa9d2">PhysicsObject::setNode</a></div><div class="ttdeci">void setNode(Ogre::SceneNode *newnode)</div><div class="ttdoc">Sets the reference to a SceneNode</div><div class="ttdef"><b>Definition:</b> PhysicsObject.cpp:19</div></div>
 <div class="ttc" id="aclass_physics_object_html_a2172e8b71176e3a54d6a8f5ff15d4178"><div class="ttname"><a href="class_physics_object.html#a2172e8b71176e3a54d6a8f5ff15d4178">PhysicsObject::~PhysicsObject</a></div><div class="ttdeci">~PhysicsObject()</div><div class="ttdef"><b>Definition:</b> PhysicsObject.cpp:72</div></div>
 <div class="ttc" id="aclass_physics_object_html_a221fdbaad55f9376e5e9441558e1b596"><div class="ttname"><a href="class_physics_object.html#a221fdbaad55f9376e5e9441558e1b596">PhysicsObject::getNode</a></div><div class="ttdeci">Ogre::SceneNode * getNode()</div><div class="ttdoc">Returns a reference to the attached SceneNode</div><div class="ttdef"><b>Definition:</b> PhysicsObject.cpp:11</div></div>
+<div class="ttc" id="aclass_physics_object_html_a2d6995389d9f03a9682acd892cab1110"><div class="ttname"><a href="class_physics_object.html#a2d6995389d9f03a9682acd892cab1110">PhysicsObject::node</a></div><div class="ttdeci">Ogre::SceneNode * node</div><div class="ttdoc">Pointer Reference to the SceneNode.</div><div class="ttdef"><b>Definition:</b> PhysicsObject.h:12</div></div>
+<div class="ttc" id="aclass_physics_object_html_a3bff1b4bc691a4253b2e2434e5d886bb"><div class="ttname"><a href="class_physics_object.html#a3bff1b4bc691a4253b2e2434e5d886bb">PhysicsObject::moveSpeed</a></div><div class="ttdeci">float moveSpeed</div><div class="ttdoc">float for the movespeed of the object</div><div class="ttdef"><b>Definition:</b> PhysicsObject.h:15</div></div>
+<div class="ttc" id="aclass_physics_object_html_a56c4bd088a5756477b883751991e04f3"><div class="ttname"><a href="class_physics_object.html#a56c4bd088a5756477b883751991e04f3">PhysicsObject::mesh</a></div><div class="ttdeci">Ogre::ManualObject * mesh</div><div class="ttdoc">Pointer Reference to the manual object to be used as the mesh.</div><div class="ttdef"><b>Definition:</b> PhysicsObject.h:13</div></div>
 <div class="ttc" id="aclass_physics_object_html_a6a6eedf5123411636d9fca05d860070e"><div class="ttname"><a href="class_physics_object.html#a6a6eedf5123411636d9fca05d860070e">PhysicsObject::update</a></div><div class="ttdeci">virtual void update(const Ogre::FrameEvent &amp;evt)=0</div><div class="ttdoc">virtual update function to be inherited</div></div>
 <div class="ttc" id="aclass_physics_object_html_a6bff3b7badfed2be129b770c43e5e448"><div class="ttname"><a href="class_physics_object.html#a6bff3b7badfed2be129b770c43e5e448">PhysicsObject::SetVelocity</a></div><div class="ttdeci">void SetVelocity(Ogre::Vector3 newvelocity)</div><div class="ttdoc">Sets the velocity</div><div class="ttdef"><b>Definition:</b> PhysicsObject.cpp:59</div></div>
+<div class="ttc" id="aclass_physics_object_html_aa011bb4782b68f4808c22c381f8f9669"><div class="ttname"><a href="class_physics_object.html#aa011bb4782b68f4808c22c381f8f9669">PhysicsObject::velocity</a></div><div class="ttdeci">Ogre::Vector3 velocity</div><div class="ttdoc">vector for the velocity of the object</div><div class="ttdef"><b>Definition:</b> PhysicsObject.h:16</div></div>
 <div class="ttc" id="aclass_physics_object_html_aafb8ed1e160e0dd7610ba20dc63f8ac5"><div class="ttname"><a href="class_physics_object.html#aafb8ed1e160e0dd7610ba20dc63f8ac5">PhysicsObject::SetMesh</a></div><div class="ttdeci">void SetMesh(Ogre::ManualObject *newmesh)</div><div class="ttdoc">Sets the reference to a ManualObject(mesh)</div><div class="ttdef"><b>Definition:</b> PhysicsObject.cpp:35</div></div>
 <div class="ttc" id="aclass_physics_object_html_ab6f9baed8f46fa63bc2ad1002e3c1914"><div class="ttname"><a href="class_physics_object.html#ab6f9baed8f46fa63bc2ad1002e3c1914">PhysicsObject::SetMoveSpeed</a></div><div class="ttdeci">void SetMoveSpeed(float newmovespeed)</div><div class="ttdoc">Sets the movespeed of the object</div><div class="ttdef"><b>Definition:</b> PhysicsObject.cpp:43</div></div>
 <div class="ttc" id="aclass_physics_object_html_aba93a440a66573666661bedb2aca0455"><div class="ttname"><a href="class_physics_object.html#aba93a440a66573666661bedb2aca0455">PhysicsObject::GetMesh</a></div><div class="ttdeci">Ogre::ManualObject * GetMesh()</div><div class="ttdoc">Returns a reference to the attached Manual object(mesh)</div><div class="ttdef"><b>Definition:</b> PhysicsObject.cpp:27</div></div>
@@ -131,7 +144,7 @@ $(document).ready(function(){initNavTree('_physics_object_8h_source.html',''); i
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5c5a3917ce736961acde7ce0a6f8430e.html">OrgreTemplateV2</a></li><li class="navelem"><a class="el" href="_physics_object_8h.html">PhysicsObject.h</a></li>
+    <li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_29e87368881c7cf1a5cd67445bf26578.html">Programming Projects</a></li><li class="navelem"><a class="el" href="dir_dbfadae803e738c31deb0dc79984a3e3.html">GAME3121 - Game Engine Development</a></li><li class="navelem"><a class="el" href="dir_2f4dc6b3c6a67f55f027d4f1d32a17b3.html">GAME3121 - TulipChris - Assignment1</a></li><li class="navelem"><a class="el" href="dir_1be3a86f97ba29894f504d9f15b78c2c.html">OrgreTemplateV2</a></li><li class="navelem"><a class="el" href="_physics_object_8h.html">PhysicsObject.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

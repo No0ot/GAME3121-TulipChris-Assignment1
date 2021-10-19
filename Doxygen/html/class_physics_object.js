@@ -10,5 +10,9 @@ var class_physics_object =
     [ "SetMoveSpeed", "class_physics_object.html#ab6f9baed8f46fa63bc2ad1002e3c1914", null ],
     [ "setNode", "class_physics_object.html#a17389c040b67656b2856537f799fa9d2", null ],
     [ "SetVelocity", "class_physics_object.html#a6bff3b7badfed2be129b770c43e5e448", null ],
-    [ "update", "class_physics_object.html#a6a6eedf5123411636d9fca05d860070e", null ]
+    [ "update", "class_physics_object.html#a6a6eedf5123411636d9fca05d860070e", null ],
+    [ "mesh", "class_physics_object.html#a56c4bd088a5756477b883751991e04f3", null ],
+    [ "moveSpeed", "class_physics_object.html#a3bff1b4bc691a4253b2e2434e5d886bb", null ],
+    [ "node", "class_physics_object.html#a2d6995389d9f03a9682acd892cab1110", null ],
+    [ "velocity", "class_physics_object.html#aa011bb4782b68f4808c22c381f8f9669", null ]
 ];

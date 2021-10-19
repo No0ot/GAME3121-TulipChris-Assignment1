@@ -1,5 +1,10 @@
 \hypertarget{class_physics_frame_listener}{}\doxysection{Physics\+Frame\+Listener Class Reference}
 \label{class_physics_frame_listener}\index{PhysicsFrameListener@{PhysicsFrameListener}}
+
+
+Custom Frame\+Listener.  
+
+
 Inheritance diagram for Physics\+Frame\+Listener\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,10 +18,19 @@ Inheritance diagram for Physics\+Frame\+Listener\+:\begin{figure}[H]
 \item 
 bool \mbox{\hyperlink{class_physics_frame_listener_a728af2d13d2211b59116053a42862a25}{frame\+Started}} (const Ogre\+::\+Frame\+Event \&evt)
 \end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_physics_frame_listener_a38fb9a15891bf1bd3b808277b0569538}{physics\+Objects}}
+\item 
+\mbox{\hyperlink{class_game}{Game}} $\ast$ \mbox{\hyperlink{class_physics_frame_listener_a7aeee524691c3a54d58a9a12926a04e5}{game\+Instance}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-\mbox{\hyperlink{class_game}{Game}} class used to build the application and set-\/up the game world Custom Frame\+Listener. Keeps references to physics objects to call their update functions. Also keeps a reference to the game instance to call the update on the UI 
+Custom Frame\+Listener. 
+
+\mbox{\hyperlink{class_game}{Game}} class used to build the application and set-\/up the game world Keeps references to physics objects to call their update functions. Also keeps a reference to the game instance to call the update on the UI 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{class_physics_frame_listener_a6ffe245d1fcbd3494f845e46c69b5fcf}\label{class_physics_frame_listener_a6ffe245d1fcbd3494f845e46c69b5fcf}} 
@@ -36,6 +50,21 @@ bool \mbox{\hyperlink{class_physics_frame_listener_a728af2d13d2211b59116053a4286
 
 
 
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_physics_frame_listener_a7aeee524691c3a54d58a9a12926a04e5}\label{class_physics_frame_listener_a7aeee524691c3a54d58a9a12926a04e5}} 
+\index{PhysicsFrameListener@{PhysicsFrameListener}!gameInstance@{gameInstance}}
+\index{gameInstance@{gameInstance}!PhysicsFrameListener@{PhysicsFrameListener}}
+\doxysubsubsection{\texorpdfstring{gameInstance}{gameInstance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game}{Game}}$\ast$ Physics\+Frame\+Listener\+::game\+Instance\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_physics_frame_listener_a38fb9a15891bf1bd3b808277b0569538}\label{class_physics_frame_listener_a38fb9a15891bf1bd3b808277b0569538}} 
+\index{PhysicsFrameListener@{PhysicsFrameListener}!physicsObjects@{physicsObjects}}
+\index{physicsObjects@{physicsObjects}!PhysicsFrameListener@{PhysicsFrameListener}}
+\doxysubsubsection{\texorpdfstring{physicsObjects}{physicsObjects}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_physics_object}{Physics\+Object}}$\ast$$>$ Physics\+Frame\+Listener\+::physics\+Objects\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Orgre\+Template\+V2/\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Programming Projects/\+GAME3121 -\/ Game Engine Development/\+GAME3121 -\/ Tulip\+Chris -\/ Assignment1/\+Orgre\+Template\+V2/\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

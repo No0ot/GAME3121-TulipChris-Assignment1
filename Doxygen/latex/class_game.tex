@@ -19,7 +19,7 @@ Inheritance diagram for Game\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_game}{Game}} class Constructor. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{class_game_a72772b628443c3675976d6b5e6c9ec2a}{$\sim$\+Game}} ()
 \item 
 void \mbox{\hyperlink{class_game_ae4618ba40eabbbe65e35f1bb239aa29b}{setup}} ()
@@ -44,6 +44,53 @@ void \mbox{\hyperlink{class_game_ad5329359dfd334128400a082fa3fd2c9}{Create\+UI}}
 \begin{DoxyCompactList}\small\item\em Creates the traymanager and the different labels present within the scene \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_game_ad61ea3e9ad3e02e5e4a5430a2a1d6023}{Update\+UI}} (const Ogre\+::\+Frame\+Event \&evt)
 \begin{DoxyCompactList}\small\item\em A function to update the UI \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Scene\+Manager $\ast$ \mbox{\hyperlink{class_game_adec79e7e26247ccdf0556137e540ac58}{scn\+Mgr}}
+\item 
+Root $\ast$ \mbox{\hyperlink{class_game_aacecda78ea5b9e76eaf53f511addd514}{root}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_physics_object}{Physics\+Object}} $\ast$ $>$ \mbox{\hyperlink{class_game_ad8a51002185f965be0cdd5d2c71bf0e5}{physics\+Objects}}
+\item 
+\mbox{\hyperlink{class_paddle}{Paddle}} $\ast$ \mbox{\hyperlink{class_game_a499958f670d649e1a6b3864d5fda3580}{paddle\+Object}}
+\item 
+Ogre\+::\+Scene\+Node $\ast$ \mbox{\hyperlink{class_game_a1aa29adee7d09dc0c13b32cf43a7d611}{paddle\+Node}}
+\item 
+\mbox{\hyperlink{class_ball}{Ball}} $\ast$ \mbox{\hyperlink{class_game_a3392c78f115bf26b1ff423b0d8720153}{ball\+Object}}
+\item 
+Ogre\+::\+Scene\+Node $\ast$ \mbox{\hyperlink{class_game_a8e6a5bc41b74bb10340f6e5ecfd77b10}{ball\+Node}}
+\item 
+Tray\+Manager $\ast$ \mbox{\hyperlink{class_game_a482794a4e32343511bb6bcf026882ef8}{m\+Tray\+Mgr}}
+\item 
+Tray\+Listener \mbox{\hyperlink{class_game_aeb04f543103c3df58abd3f0fabacddf3}{my\+Tray\+Listener}}
+\item 
+Label $\ast$ \mbox{\hyperlink{class_game_a865f214d85a1307ce200e667bf9c5e5a}{m\+Info\+Label}}
+\item 
+Label $\ast$ \mbox{\hyperlink{class_game_ae6319f9b4e6e7b6c46779b96f7649a85}{m\+Fps\+Label}}
+\item 
+Label $\ast$ \mbox{\hyperlink{class_game_a1f998db88b1f1f470999506bfed88851}{m\+Fps}}
+\item 
+String \mbox{\hyperlink{class_game_a97298fb47d714bcf0343f7d20b4c7de1}{fpsnum}}
+\item 
+Label $\ast$ \mbox{\hyperlink{class_game_aad943d16cb3192e607d7b9dd2c131583}{m\+Score\+Label}}
+\item 
+Label $\ast$ \mbox{\hyperlink{class_game_a17d46670f21ec553797d298ef8edd8bc}{m\+Score}}
+\item 
+String \mbox{\hyperlink{class_game_ae98cd521c6224eef97c221c2b480b109}{scorenum}}
+\item 
+Label $\ast$ \mbox{\hyperlink{class_game_ae768327d794275563d56384758d376c0}{m\+Tpu\+Label}}
+\item 
+Label $\ast$ \mbox{\hyperlink{class_game_aeef9980a86834bfc464d45baf79abe05}{m\+Tpu}}
+\item 
+String \mbox{\hyperlink{class_game_a09a5e63b153ee9b3ab9b8cb3e50578c8}{Tpunum}}
+\item 
+Label $\ast$ \mbox{\hyperlink{class_game_ae23984f0ffb50d51cf4d447db45ba68c}{m\+Lives\+Label}}
+\item 
+Label $\ast$ \mbox{\hyperlink{class_game_a936123feb33b713a27224f6e08ae9c33}{m\+Lives}}
+\item 
+String \mbox{\hyperlink{class_game_a136f640b2914bda0755435d1e99d69d2}{livesnum}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -56,7 +103,11 @@ void \mbox{\hyperlink{class_game_ad61ea3e9ad3e02e5e4a5430a2a1d6023}{Update\+UI}}
 \doxysubsubsection{\texorpdfstring{Game()}{Game()}}
 {\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\hyperlink{class_game}{Game}} class Constructor \mbox{\Hypertarget{class_game_a72772b628443c3675976d6b5e6c9ec2a}\label{class_game_a72772b628443c3675976d6b5e6c9ec2a}} 
+
+
+\mbox{\hyperlink{class_game}{Game}} class Constructor. 
+
+\mbox{\Hypertarget{class_game_a72772b628443c3675976d6b5e6c9ec2a}\label{class_game_a72772b628443c3675976d6b5e6c9ec2a}} 
 \index{Game@{Game}!````~Game@{$\sim$Game}}
 \index{````~Game@{$\sim$Game}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
@@ -75,7 +126,7 @@ void \mbox{\hyperlink{class_game_ad61ea3e9ad3e02e5e4a5430a2a1d6023}{Update\+UI}}
 
 Creates the Background Plane 
 
-Creates the Background Plane creates a plane for the background and binds a texture to the material \mbox{\Hypertarget{class_game_a07053ea748396f8a7af5ffa0ac86fc08}\label{class_game_a07053ea748396f8a7af5ffa0ac86fc08}} 
+Creates the Background Plane creates a plane for the background and binds a texture to the material. \mbox{\Hypertarget{class_game_a07053ea748396f8a7af5ffa0ac86fc08}\label{class_game_a07053ea748396f8a7af5ffa0ac86fc08}} 
 \index{Game@{Game}!CreateCamera@{CreateCamera}}
 \index{CreateCamera@{CreateCamera}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{CreateCamera()}{CreateCamera()}}
@@ -85,7 +136,7 @@ Creates the Background Plane creates a plane for the background and binds a text
 
 Creates the game world camera and binds it to a scenenode 
 
-Create Camera Function\+: Creates the game world camera and binds it to a scenenode \mbox{\Hypertarget{class_game_adadc9291cf53d2843b146e25052a72a3}\label{class_game_adadc9291cf53d2843b146e25052a72a3}} 
+Create Camera Function\+: Creates the game world camera and binds it to a scenenode. \mbox{\Hypertarget{class_game_adadc9291cf53d2843b146e25052a72a3}\label{class_game_adadc9291cf53d2843b146e25052a72a3}} 
 \index{Game@{Game}!CreateFrameListener@{CreateFrameListener}}
 \index{CreateFrameListener@{CreateFrameListener}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{CreateFrameListener()}{CreateFrameListener()}}
@@ -95,7 +146,7 @@ Create Camera Function\+: Creates the game world camera and binds it to a scenen
 
 Creates the custom observer class framelistener 
 
-Creates the custom observer class framelistener \+: Creates the custom \mbox{\hyperlink{class_physics_frame_listener}{Physics\+Frame\+Listener}} while passing in a vector of all the physics objects along with a refrence to the game instance \mbox{\Hypertarget{class_game_a01749ddd69800dfdfd4bb290c1ea6ae5}\label{class_game_a01749ddd69800dfdfd4bb290c1ea6ae5}} 
+Creates the custom observer class framelistener \+: Creates the custom \mbox{\hyperlink{class_physics_frame_listener}{Physics\+Frame\+Listener}} while passing in a vector of all the physics objects along with a refrence to the game instance. \mbox{\Hypertarget{class_game_a01749ddd69800dfdfd4bb290c1ea6ae5}\label{class_game_a01749ddd69800dfdfd4bb290c1ea6ae5}} 
 \index{Game@{Game}!CreateLights@{CreateLights}}
 \index{CreateLights@{CreateLights}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{CreateLights()}{CreateLights()}}
@@ -105,7 +156,7 @@ Creates the custom observer class framelistener \+: Creates the custom \mbox{\hy
 
 Creates all the lights needed for the scene 
 
-Create Lights Function \+: Creates all the lights needed for the scene \mbox{\Hypertarget{class_game_a1b02eea54a972fd8c48d3fedcfd55d04}\label{class_game_a1b02eea54a972fd8c48d3fedcfd55d04}} 
+Create Lights Function \+: Creates all the lights needed for the scene. \mbox{\Hypertarget{class_game_a1b02eea54a972fd8c48d3fedcfd55d04}\label{class_game_a1b02eea54a972fd8c48d3fedcfd55d04}} 
 \index{Game@{Game}!CreatePhysicsObjects@{CreatePhysicsObjects}}
 \index{CreatePhysicsObjects@{CreatePhysicsObjects}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{CreatePhysicsObjects()}{CreatePhysicsObjects()}}
@@ -115,7 +166,7 @@ Create Lights Function \+: Creates all the lights needed for the scene \mbox{\Hy
 
 Creates the custom meshes and objects used within the scene 
 
-Create Physics Objects function\+: Creates the custom meshes and objects used within the scene \mbox{\Hypertarget{class_game_a1df5b2aa5e4bb03bc39fafbf4aa1f943}\label{class_game_a1df5b2aa5e4bb03bc39fafbf4aa1f943}} 
+Create Physics Objects function\+: Creates the custom meshes and objects used within the scene. \mbox{\Hypertarget{class_game_a1df5b2aa5e4bb03bc39fafbf4aa1f943}\label{class_game_a1df5b2aa5e4bb03bc39fafbf4aa1f943}} 
 \index{Game@{Game}!CreateScene@{CreateScene}}
 \index{CreateScene@{CreateScene}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{CreateScene()}{CreateScene()}}
@@ -125,7 +176,7 @@ Create Physics Objects function\+: Creates the custom meshes and objects used wi
 
 Calls the other functions that create the main objects in the game 
 
-Create Scene Function Calls the other functions that create the main objects in the game \mbox{\Hypertarget{class_game_ad5329359dfd334128400a082fa3fd2c9}\label{class_game_ad5329359dfd334128400a082fa3fd2c9}} 
+Create Scene Function Calls the other functions that create the main objects in the game. \mbox{\Hypertarget{class_game_ad5329359dfd334128400a082fa3fd2c9}\label{class_game_ad5329359dfd334128400a082fa3fd2c9}} 
 \index{Game@{Game}!CreateUI@{CreateUI}}
 \index{CreateUI@{CreateUI}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{CreateUI()}{CreateUI()}}
@@ -135,7 +186,7 @@ Create Scene Function Calls the other functions that create the main objects in 
 
 Creates the traymanager and the different labels present within the scene 
 
-Creates the UI\+: Creates the traymanager and the different labels present within the scene \mbox{\Hypertarget{class_game_a2ba00c3475d222573e5ad54b88b389b7}\label{class_game_a2ba00c3475d222573e5ad54b88b389b7}} 
+Creates the UI\+: Creates the traymanager and the different labels present within the scene. \mbox{\Hypertarget{class_game_a2ba00c3475d222573e5ad54b88b389b7}\label{class_game_a2ba00c3475d222573e5ad54b88b389b7}} 
 \index{Game@{Game}!keyPressed@{keyPressed}}
 \index{keyPressed@{keyPressed}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{keyPressed()}{keyPressed()}}
@@ -145,7 +196,7 @@ Creates the UI\+: Creates the traymanager and the different labels present withi
 
 Input detection function for keydown 
 
-Input detection function for keydown Handles input detection for keyboard buttons pressed down Basic Controls for the game \mbox{\Hypertarget{class_game_a495b7d5ab243a04b0c5fc5e28c4f73b4}\label{class_game_a495b7d5ab243a04b0c5fc5e28c4f73b4}} 
+Input detection function for keydown Handles input detection for keyboard buttons pressed down Basic Controls for the game. \mbox{\Hypertarget{class_game_a495b7d5ab243a04b0c5fc5e28c4f73b4}\label{class_game_a495b7d5ab243a04b0c5fc5e28c4f73b4}} 
 \index{Game@{Game}!keyReleased@{keyReleased}}
 \index{keyReleased@{keyReleased}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{keyReleased()}{keyReleased()}}
@@ -155,9 +206,9 @@ Input detection function for keydown Handles input detection for keyboard button
 
 
 
-Input detection for Keyup 
+Input detection for Keyup used to smooth movement of the paddle object.
 
-Input detection for Keyup used to smooth movement of the paddle object \mbox{\Hypertarget{class_game_ae4618ba40eabbbe65e35f1bb239aa29b}\label{class_game_ae4618ba40eabbbe65e35f1bb239aa29b}} 
+Input detection for Keyup \mbox{\Hypertarget{class_game_ae4618ba40eabbbe65e35f1bb239aa29b}\label{class_game_ae4618ba40eabbbe65e35f1bb239aa29b}} 
 \index{Game@{Game}!setup@{setup}}
 \index{setup@{setup}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{setup()}{setup()}}
@@ -167,7 +218,7 @@ Input detection for Keyup used to smooth movement of the paddle object \mbox{\Hy
 
 Main Setup Function 
 
-Main setup function calls the super setup function as well as gets references to the root and Scene\+Manager \mbox{\Hypertarget{class_game_ad61ea3e9ad3e02e5e4a5430a2a1d6023}\label{class_game_ad61ea3e9ad3e02e5e4a5430a2a1d6023}} 
+Main setup function calls the super setup function as well as gets references to the root and Scene\+Manager. \mbox{\Hypertarget{class_game_ad61ea3e9ad3e02e5e4a5430a2a1d6023}\label{class_game_ad61ea3e9ad3e02e5e4a5430a2a1d6023}} 
 \index{Game@{Game}!UpdateUI@{UpdateUI}}
 \index{UpdateUI@{UpdateUI}!Game@{Game}}
 \doxysubsubsection{\texorpdfstring{UpdateUI()}{UpdateUI()}}
@@ -177,6 +228,8 @@ Main setup function calls the super setup function as well as gets references to
 
 A function to update the UI 
 
+A function to update the UI this function updates the various UI elements per frame.
+
 
 \begin{DoxyParams}{Parameters}
 {\em evt} & \\
@@ -184,9 +237,144 @@ A function to update the UI
 \end{DoxyParams}
 
 
-A function to update the UI this function updates the various UI elements per frame. It is used within the physics frame listener 
+It is used within the physics frame listener 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_a8e6a5bc41b74bb10340f6e5ecfd77b10}\label{class_game_a8e6a5bc41b74bb10340f6e5ecfd77b10}} 
+\index{Game@{Game}!ballNode@{ballNode}}
+\index{ballNode@{ballNode}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{ballNode}{ballNode}}
+{\footnotesize\ttfamily Ogre\+::\+Scene\+Node$\ast$ Game\+::ball\+Node\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_a3392c78f115bf26b1ff423b0d8720153}\label{class_game_a3392c78f115bf26b1ff423b0d8720153}} 
+\index{Game@{Game}!ballObject@{ballObject}}
+\index{ballObject@{ballObject}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{ballObject}{ballObject}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ball}{Ball}}$\ast$ Game\+::ball\+Object\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_a97298fb47d714bcf0343f7d20b4c7de1}\label{class_game_a97298fb47d714bcf0343f7d20b4c7de1}} 
+\index{Game@{Game}!fpsnum@{fpsnum}}
+\index{fpsnum@{fpsnum}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{fpsnum}{fpsnum}}
+{\footnotesize\ttfamily String Game\+::fpsnum\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_a136f640b2914bda0755435d1e99d69d2}\label{class_game_a136f640b2914bda0755435d1e99d69d2}} 
+\index{Game@{Game}!livesnum@{livesnum}}
+\index{livesnum@{livesnum}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{livesnum}{livesnum}}
+{\footnotesize\ttfamily String Game\+::livesnum\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_a1f998db88b1f1f470999506bfed88851}\label{class_game_a1f998db88b1f1f470999506bfed88851}} 
+\index{Game@{Game}!mFps@{mFps}}
+\index{mFps@{mFps}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mFps}{mFps}}
+{\footnotesize\ttfamily Label$\ast$ Game\+::m\+Fps\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_ae6319f9b4e6e7b6c46779b96f7649a85}\label{class_game_ae6319f9b4e6e7b6c46779b96f7649a85}} 
+\index{Game@{Game}!mFpsLabel@{mFpsLabel}}
+\index{mFpsLabel@{mFpsLabel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mFpsLabel}{mFpsLabel}}
+{\footnotesize\ttfamily Label$\ast$ Game\+::m\+Fps\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_a865f214d85a1307ce200e667bf9c5e5a}\label{class_game_a865f214d85a1307ce200e667bf9c5e5a}} 
+\index{Game@{Game}!mInfoLabel@{mInfoLabel}}
+\index{mInfoLabel@{mInfoLabel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mInfoLabel}{mInfoLabel}}
+{\footnotesize\ttfamily Label$\ast$ Game\+::m\+Info\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_a936123feb33b713a27224f6e08ae9c33}\label{class_game_a936123feb33b713a27224f6e08ae9c33}} 
+\index{Game@{Game}!mLives@{mLives}}
+\index{mLives@{mLives}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mLives}{mLives}}
+{\footnotesize\ttfamily Label$\ast$ Game\+::m\+Lives\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_ae23984f0ffb50d51cf4d447db45ba68c}\label{class_game_ae23984f0ffb50d51cf4d447db45ba68c}} 
+\index{Game@{Game}!mLivesLabel@{mLivesLabel}}
+\index{mLivesLabel@{mLivesLabel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mLivesLabel}{mLivesLabel}}
+{\footnotesize\ttfamily Label$\ast$ Game\+::m\+Lives\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_a17d46670f21ec553797d298ef8edd8bc}\label{class_game_a17d46670f21ec553797d298ef8edd8bc}} 
+\index{Game@{Game}!mScore@{mScore}}
+\index{mScore@{mScore}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mScore}{mScore}}
+{\footnotesize\ttfamily Label$\ast$ Game\+::m\+Score\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_aad943d16cb3192e607d7b9dd2c131583}\label{class_game_aad943d16cb3192e607d7b9dd2c131583}} 
+\index{Game@{Game}!mScoreLabel@{mScoreLabel}}
+\index{mScoreLabel@{mScoreLabel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mScoreLabel}{mScoreLabel}}
+{\footnotesize\ttfamily Label$\ast$ Game\+::m\+Score\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_aeef9980a86834bfc464d45baf79abe05}\label{class_game_aeef9980a86834bfc464d45baf79abe05}} 
+\index{Game@{Game}!mTpu@{mTpu}}
+\index{mTpu@{mTpu}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mTpu}{mTpu}}
+{\footnotesize\ttfamily Label$\ast$ Game\+::m\+Tpu\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_ae768327d794275563d56384758d376c0}\label{class_game_ae768327d794275563d56384758d376c0}} 
+\index{Game@{Game}!mTpuLabel@{mTpuLabel}}
+\index{mTpuLabel@{mTpuLabel}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mTpuLabel}{mTpuLabel}}
+{\footnotesize\ttfamily Label$\ast$ Game\+::m\+Tpu\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_a482794a4e32343511bb6bcf026882ef8}\label{class_game_a482794a4e32343511bb6bcf026882ef8}} 
+\index{Game@{Game}!mTrayMgr@{mTrayMgr}}
+\index{mTrayMgr@{mTrayMgr}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mTrayMgr}{mTrayMgr}}
+{\footnotesize\ttfamily Tray\+Manager$\ast$ Game\+::m\+Tray\+Mgr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_aeb04f543103c3df58abd3f0fabacddf3}\label{class_game_aeb04f543103c3df58abd3f0fabacddf3}} 
+\index{Game@{Game}!myTrayListener@{myTrayListener}}
+\index{myTrayListener@{myTrayListener}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{myTrayListener}{myTrayListener}}
+{\footnotesize\ttfamily Tray\+Listener Game\+::my\+Tray\+Listener\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_a1aa29adee7d09dc0c13b32cf43a7d611}\label{class_game_a1aa29adee7d09dc0c13b32cf43a7d611}} 
+\index{Game@{Game}!paddleNode@{paddleNode}}
+\index{paddleNode@{paddleNode}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paddleNode}{paddleNode}}
+{\footnotesize\ttfamily Ogre\+::\+Scene\+Node$\ast$ Game\+::paddle\+Node\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_a499958f670d649e1a6b3864d5fda3580}\label{class_game_a499958f670d649e1a6b3864d5fda3580}} 
+\index{Game@{Game}!paddleObject@{paddleObject}}
+\index{paddleObject@{paddleObject}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{paddleObject}{paddleObject}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_paddle}{Paddle}}$\ast$ Game\+::paddle\+Object\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_ad8a51002185f965be0cdd5d2c71bf0e5}\label{class_game_ad8a51002185f965be0cdd5d2c71bf0e5}} 
+\index{Game@{Game}!physicsObjects@{physicsObjects}}
+\index{physicsObjects@{physicsObjects}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{physicsObjects}{physicsObjects}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_physics_object}{Physics\+Object}}$\ast$$>$ Game\+::physics\+Objects\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_aacecda78ea5b9e76eaf53f511addd514}\label{class_game_aacecda78ea5b9e76eaf53f511addd514}} 
+\index{Game@{Game}!root@{root}}
+\index{root@{root}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily Root$\ast$ Game\+::root\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_adec79e7e26247ccdf0556137e540ac58}\label{class_game_adec79e7e26247ccdf0556137e540ac58}} 
+\index{Game@{Game}!scnMgr@{scnMgr}}
+\index{scnMgr@{scnMgr}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{scnMgr}{scnMgr}}
+{\footnotesize\ttfamily Scene\+Manager$\ast$ Game\+::scn\+Mgr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_ae98cd521c6224eef97c221c2b480b109}\label{class_game_ae98cd521c6224eef97c221c2b480b109}} 
+\index{Game@{Game}!scorenum@{scorenum}}
+\index{scorenum@{scorenum}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{scorenum}{scorenum}}
+{\footnotesize\ttfamily String Game\+::scorenum\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_game_a09a5e63b153ee9b3ab9b8cb3e50578c8}\label{class_game_a09a5e63b153ee9b3ab9b8cb3e50578c8}} 
+\index{Game@{Game}!Tpunum@{Tpunum}}
+\index{Tpunum@{Tpunum}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Tpunum}{Tpunum}}
+{\footnotesize\ttfamily String Game\+::\+Tpunum\hspace{0.3cm}{\ttfamily [private]}}
+
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Orgre\+Template\+V2/\mbox{\hyperlink{_game_8h}{Game.\+h}}\item 
-Orgre\+Template\+V2/\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Programming Projects/\+GAME3121 -\/ Game Engine Development/\+GAME3121 -\/ Tulip\+Chris -\/ Assignment1/\+Orgre\+Template\+V2/\mbox{\hyperlink{_game_8h}{Game.\+h}}\item 
+D\+:/\+Programming Projects/\+GAME3121 -\/ Game Engine Development/\+GAME3121 -\/ Tulip\+Chris -\/ Assignment1/\+Orgre\+Template\+V2/\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

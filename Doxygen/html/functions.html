@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GAME3121 - TulipChris - Assignment1: Class Members</title>
+<title>GAME3121_Assignment1: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,10 +30,25 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GAME3121 - TulipChris - Assignment1
+   <div id="projectname">GAME3121_Assignment1
    </div>
-   <div id="projectbrief">Pong game made in Ogre</div>
+   <div id="projectbrief">OGRE based Pong game with a Paddle and Ball</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -40,17 +60,6 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -87,6 +96,8 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 <h3><a id="index_b" name="index_b"></a>- b -</h3><ul>
 <li>Ball()&#160;:&#160;<a class="el" href="class_ball.html#a485890ba250f1539ad03047ed6e759f0">Ball</a></li>
+<li>ballNode&#160;:&#160;<a class="el" href="class_game.html#a8e6a5bc41b74bb10340f6e5ecfd77b10">Game</a></li>
+<li>ballObject&#160;:&#160;<a class="el" href="class_game.html#a3392c78f115bf26b1ff423b0d8720153">Game</a></li>
 <li>BeginPlay()&#160;:&#160;<a class="el" href="class_ball.html#a1462da02d7e27bbd0317a7a6dbdc182c">Ball</a></li>
 </ul>
 
@@ -107,12 +118,14 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_f" name="index_f"></a>- f -</h3><ul>
+<li>fpsnum&#160;:&#160;<a class="el" href="class_game.html#a97298fb47d714bcf0343f7d20b4c7de1">Game</a></li>
 <li>frameStarted()&#160;:&#160;<a class="el" href="class_physics_frame_listener.html#a728af2d13d2211b59116053a42862a25">PhysicsFrameListener</a></li>
 </ul>
 
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
 <li>Game()&#160;:&#160;<a class="el" href="class_game.html#ad59df6562a58a614fda24622d3715b65">Game</a></li>
+<li>gameInstance&#160;:&#160;<a class="el" href="class_physics_frame_listener.html#a7aeee524691c3a54d58a9a12926a04e5">PhysicsFrameListener</a></li>
 <li>GetLives()&#160;:&#160;<a class="el" href="class_ball.html#a06812f26df422f7d45619acedd45eb19">Ball</a></li>
 <li>GetMesh()&#160;:&#160;<a class="el" href="class_physics_object.html#aba93a440a66573666661bedb2aca0455">PhysicsObject</a></li>
 <li>GetMoveSpeed()&#160;:&#160;<a class="el" href="class_physics_object.html#ad14ee6f41c3cc40608df2985c6dfec23">PhysicsObject</a></li>
@@ -122,34 +135,71 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </ul>
 
 
+<h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
+<li>inPlay&#160;:&#160;<a class="el" href="class_ball.html#a0d24dd187571e3be9a9eef3ac0285dad">Ball</a></li>
+</ul>
+
+
 <h3><a id="index_k" name="index_k"></a>- k -</h3><ul>
 <li>keyPressed()&#160;:&#160;<a class="el" href="class_game.html#a2ba00c3475d222573e5ad54b88b389b7">Game</a></li>
 <li>keyReleased()&#160;:&#160;<a class="el" href="class_game.html#a495b7d5ab243a04b0c5fc5e28c4f73b4">Game</a></li>
 </ul>
 
 
+<h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
+<li>lives&#160;:&#160;<a class="el" href="class_ball.html#ace40aa70515f9cd46dbad2ce94808823">Ball</a></li>
+<li>livesnum&#160;:&#160;<a class="el" href="class_game.html#a136f640b2914bda0755435d1e99d69d2">Game</a></li>
+</ul>
+
+
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>mesh&#160;:&#160;<a class="el" href="class_physics_object.html#a56c4bd088a5756477b883751991e04f3">PhysicsObject</a></li>
+<li>mFps&#160;:&#160;<a class="el" href="class_game.html#a1f998db88b1f1f470999506bfed88851">Game</a></li>
+<li>mFpsLabel&#160;:&#160;<a class="el" href="class_game.html#ae6319f9b4e6e7b6c46779b96f7649a85">Game</a></li>
+<li>mInfoLabel&#160;:&#160;<a class="el" href="class_game.html#a865f214d85a1307ce200e667bf9c5e5a">Game</a></li>
+<li>mLives&#160;:&#160;<a class="el" href="class_game.html#a936123feb33b713a27224f6e08ae9c33">Game</a></li>
+<li>mLivesLabel&#160;:&#160;<a class="el" href="class_game.html#ae23984f0ffb50d51cf4d447db45ba68c">Game</a></li>
 <li>moveLeft&#160;:&#160;<a class="el" href="class_paddle.html#ac13784340807aa93b89117f51f6b8630">Paddle</a></li>
 <li>MoveLeft()&#160;:&#160;<a class="el" href="class_paddle.html#a3532e4cf3398e85d142647fd30681071">Paddle</a></li>
 <li>moveRight&#160;:&#160;<a class="el" href="class_paddle.html#aa5c20da64de1b7db38bdbda1d0bb4dc6">Paddle</a></li>
 <li>MoveRight()&#160;:&#160;<a class="el" href="class_paddle.html#a2a09c5e4ea6bdd88da8626375df1bee0">Paddle</a></li>
+<li>moveSpeed&#160;:&#160;<a class="el" href="class_physics_object.html#a3bff1b4bc691a4253b2e2434e5d886bb">PhysicsObject</a></li>
+<li>mScore&#160;:&#160;<a class="el" href="class_game.html#a17d46670f21ec553797d298ef8edd8bc">Game</a></li>
+<li>mScoreLabel&#160;:&#160;<a class="el" href="class_game.html#aad943d16cb3192e607d7b9dd2c131583">Game</a></li>
+<li>mTpu&#160;:&#160;<a class="el" href="class_game.html#aeef9980a86834bfc464d45baf79abe05">Game</a></li>
+<li>mTpuLabel&#160;:&#160;<a class="el" href="class_game.html#ae768327d794275563d56384758d376c0">Game</a></li>
+<li>mTrayMgr&#160;:&#160;<a class="el" href="class_game.html#a482794a4e32343511bb6bcf026882ef8">Game</a></li>
+<li>myTrayListener&#160;:&#160;<a class="el" href="class_game.html#aeb04f543103c3df58abd3f0fabacddf3">Game</a></li>
+</ul>
+
+
+<h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
+<li>node&#160;:&#160;<a class="el" href="class_physics_object.html#a2d6995389d9f03a9682acd892cab1110">PhysicsObject</a></li>
 </ul>
 
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
 <li>Paddle()&#160;:&#160;<a class="el" href="class_paddle.html#a53895671ddfde9ba668546065ec4f164">Paddle</a></li>
+<li>paddleNode&#160;:&#160;<a class="el" href="class_game.html#a1aa29adee7d09dc0c13b32cf43a7d611">Game</a></li>
+<li>paddleObject&#160;:&#160;<a class="el" href="class_game.html#a499958f670d649e1a6b3864d5fda3580">Game</a></li>
+<li>paddleReference&#160;:&#160;<a class="el" href="class_ball.html#a502b218e664e42bbf5cb83a50dbb577f">Ball</a></li>
 <li>PhysicsFrameListener()&#160;:&#160;<a class="el" href="class_physics_frame_listener.html#a6ffe245d1fcbd3494f845e46c69b5fcf">PhysicsFrameListener</a></li>
 <li>PhysicsObject()&#160;:&#160;<a class="el" href="class_physics_object.html#a0dd37cc0f9535b676d3df937eaeb4780">PhysicsObject</a></li>
+<li>physicsObjects&#160;:&#160;<a class="el" href="class_game.html#ad8a51002185f965be0cdd5d2c71bf0e5">Game</a>, <a class="el" href="class_physics_frame_listener.html#a38fb9a15891bf1bd3b808277b0569538">PhysicsFrameListener</a></li>
 </ul>
 
 
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
 <li>ReflectVelocity()&#160;:&#160;<a class="el" href="class_ball.html#a1d8818d54e3214842a77c73de3441770">Ball</a></li>
 <li>ResetBall()&#160;:&#160;<a class="el" href="class_ball.html#aa26cab364ddfa878a21e22c941fba69c">Ball</a></li>
+<li>root&#160;:&#160;<a class="el" href="class_game.html#aacecda78ea5b9e76eaf53f511addd514">Game</a></li>
 </ul>
 
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>scnMgr&#160;:&#160;<a class="el" href="class_game.html#adec79e7e26247ccdf0556137e540ac58">Game</a></li>
+<li>score&#160;:&#160;<a class="el" href="class_ball.html#a4a79e53819c9219bfdd2589c2308a737">Ball</a></li>
+<li>scorenum&#160;:&#160;<a class="el" href="class_game.html#ae98cd521c6224eef97c221c2b480b109">Game</a></li>
 <li>SetMesh()&#160;:&#160;<a class="el" href="class_physics_object.html#aafb8ed1e160e0dd7610ba20dc63f8ac5">PhysicsObject</a></li>
 <li>SetMoveSpeed()&#160;:&#160;<a class="el" href="class_physics_object.html#ab6f9baed8f46fa63bc2ad1002e3c1914">PhysicsObject</a></li>
 <li>setNode()&#160;:&#160;<a class="el" href="class_physics_object.html#a17389c040b67656b2856537f799fa9d2">PhysicsObject</a></li>
@@ -159,9 +209,19 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </ul>
 
 
+<h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
+<li>Tpunum&#160;:&#160;<a class="el" href="class_game.html#a09a5e63b153ee9b3ab9b8cb3e50578c8">Game</a></li>
+</ul>
+
+
 <h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
 <li>update()&#160;:&#160;<a class="el" href="class_ball.html#ad6a6ba35fbf7d09ab9cf1ed84df7bda7">Ball</a>, <a class="el" href="class_paddle.html#a24c6084d441cff97b7609297743807a9">Paddle</a>, <a class="el" href="class_physics_object.html#a6a6eedf5123411636d9fca05d860070e">PhysicsObject</a></li>
 <li>UpdateUI()&#160;:&#160;<a class="el" href="class_game.html#ad61ea3e9ad3e02e5e4a5430a2a1d6023">Game</a></li>
+</ul>
+
+
+<h3><a id="index_v" name="index_v"></a>- v -</h3><ul>
+<li>velocity&#160;:&#160;<a class="el" href="class_physics_object.html#aa011bb4782b68f4808c22c381f8f9669">PhysicsObject</a></li>
 </ul>
 
 

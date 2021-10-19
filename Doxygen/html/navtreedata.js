@@ -24,8 +24,8 @@
 */
 var NAVTREE =
 [
-  [ "GAME3121 - TulipChris - Assignment1", "index.html", [
-    [ "README", "md__r_e_a_d_m_e.html", null ],
+  [ "GAME3121_Assignment1", "index.html", [
+    [ "GAME3121 - Assignment 1", "index.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

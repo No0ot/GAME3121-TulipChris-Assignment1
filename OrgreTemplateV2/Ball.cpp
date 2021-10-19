@@ -60,6 +60,7 @@ void Ball::checkCollision()
 		score++;
 		ReflectVelocity(false);
 	}
+
 	//Collide with Right
 	//else if (paddleReference->getNode()->getPosition().y - (paddleReference->getNode()->getScale().y / 2) < getNode()->getPosition().y &&
 	//	paddleReference->getNode()->getPosition().y + (paddleReference->getNode()->getScale().y / 2) > getNode()->getPosition().y &&

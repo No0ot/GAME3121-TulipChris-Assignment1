@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GAME3121 - TulipChris - Assignment1: PhysicsFrameListener Class Reference</title>
+<title>GAME3121_Assignment1: PhysicsFrameListener Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,10 +30,25 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GAME3121 - TulipChris - Assignment1
+   <div id="projectname">GAME3121_Assignment1
    </div>
-   <div id="projectbrief">Pong game made in Ogre</div>
+   <div id="projectbrief">OGRE based Pong game with a Paddle and Ball</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -40,17 +60,6 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -85,10 +94,14 @@ $(document).ready(function(){initNavTree('class_physics_frame_listener.html','')
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_physics_frame_listener-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PhysicsFrameListener Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Custom FrameListener.  
+ <a href="class_physics_frame_listener.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for PhysicsFrameListener:</div>
 <div class="dyncontent">
@@ -102,9 +115,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6ffe245d1fcbd3494f845e46c69b5fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a728af2d13d2211b59116053a42862a25"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_frame_listener.html#a728af2d13d2211b59116053a42862a25">frameStarted</a> (const Ogre::FrameEvent &amp;evt)</td></tr>
 <tr class="separator:a728af2d13d2211b59116053a42862a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a38fb9a15891bf1bd3b808277b0569538"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_physics_object.html">PhysicsObject</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_frame_listener.html#a38fb9a15891bf1bd3b808277b0569538">physicsObjects</a></td></tr>
+<tr class="separator:a38fb9a15891bf1bd3b808277b0569538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7aeee524691c3a54d58a9a12926a04e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game.html">Game</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_frame_listener.html#a7aeee524691c3a54d58a9a12926a04e5">gameInstance</a></td></tr>
+<tr class="separator:a7aeee524691c3a54d58a9a12926a04e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p ><a class="el" href="class_game.html" title="Game class used to build the application and set-up the game world">Game</a> class used to build the application and set-up the game world Custom FrameListener. Keeps references to physics objects to call their update functions. Also keeps a reference to the game instance to call the update on the UI </p>
+<div class="textblock"><p >Custom FrameListener. </p>
+<p ><a class="el" href="class_game.html" title="Game class used to build the application and set-up the game world">Game</a> class used to build the application and set-up the game world Keeps references to physics objects to call their update functions. Also keeps a reference to the game instance to call the update on the UI </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6ffe245d1fcbd3494f845e46c69b5fcf" name="a6ffe245d1fcbd3494f845e46c69b5fcf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ffe245d1fcbd3494f845e46c69b5fcf">&#9670;&nbsp;</a></span>PhysicsFrameListener()</h2>
@@ -169,8 +190,53 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7aeee524691c3a54d58a9a12926a04e5" name="a7aeee524691c3a54d58a9a12926a04e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7aeee524691c3a54d58a9a12926a04e5">&#9670;&nbsp;</a></span>gameInstance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_game.html">Game</a>* PhysicsFrameListener::gameInstance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38fb9a15891bf1bd3b808277b0569538" name="a38fb9a15891bf1bd3b808277b0569538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38fb9a15891bf1bd3b808277b0569538">&#9670;&nbsp;</a></span>physicsObjects</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_physics_object.html">PhysicsObject</a>*&gt; PhysicsFrameListener::physicsObjects</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>OrgreTemplateV2/<a class="el" href="_game_8cpp.html">Game.cpp</a></li>
+<li>D:/Programming Projects/GAME3121 - Game Engine Development/GAME3121 - TulipChris - Assignment1/OrgreTemplateV2/<a class="el" href="_game_8cpp.html">Game.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

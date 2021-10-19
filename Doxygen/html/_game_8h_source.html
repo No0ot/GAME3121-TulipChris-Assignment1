@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GAME3121 - TulipChris - Assignment1: OrgreTemplateV2/Game.h Source File</title>
+<title>GAME3121_Assignment1: D:/Programming Projects/GAME3121 - Game Engine Development/GAME3121 - TulipChris - Assignment1/OrgreTemplateV2/Game.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -16,6 +16,11 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,10 +30,25 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GAME3121 - TulipChris - Assignment1
+   <div id="projectname">GAME3121_Assignment1
    </div>
-   <div id="projectbrief">Pong game made in Ogre</div>
+   <div id="projectbrief">OGRE based Pong game with a Paddle and Ball</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.svg"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -40,17 +60,6 @@
 var searchBox = new SearchBox("searchBox", "search",'Search','.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -103,34 +112,34 @@ $(document).ready(function(){initNavTree('_game_8h_source.html',''); initResizab
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    , <span class="keyword">public</span> InputListener</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    SceneManager* scnMgr;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    Root* root;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_game.html#adec79e7e26247ccdf0556137e540ac58">   21</a></span>    SceneManager* <a class="code hl_variable" href="class_game.html#adec79e7e26247ccdf0556137e540ac58">scnMgr</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="class_game.html#aacecda78ea5b9e76eaf53f511addd514">   22</a></span>    Root* <a class="code hl_variable" href="class_game.html#aacecda78ea5b9e76eaf53f511addd514">root</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    std::vector&lt;PhysicsObject*&gt; physicsObjects;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_game.html#ad8a51002185f965be0cdd5d2c71bf0e5">   24</a></span>    std::vector&lt;PhysicsObject*&gt; <a class="code hl_variable" href="class_game.html#ad8a51002185f965be0cdd5d2c71bf0e5">physicsObjects</a>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_class" href="class_paddle.html">Paddle</a>* paddleObject;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    Ogre::SceneNode* paddleNode;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_class" href="class_ball.html">Ball</a>* ballObject;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    Ogre::SceneNode* ballNode;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_game.html#a499958f670d649e1a6b3864d5fda3580">   26</a></span>    <a class="code hl_class" href="class_paddle.html">Paddle</a>* <a class="code hl_variable" href="class_game.html#a499958f670d649e1a6b3864d5fda3580">paddleObject</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game.html#a1aa29adee7d09dc0c13b32cf43a7d611">   27</a></span>    Ogre::SceneNode* <a class="code hl_variable" href="class_game.html#a1aa29adee7d09dc0c13b32cf43a7d611">paddleNode</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_game.html#a3392c78f115bf26b1ff423b0d8720153">   28</a></span>    <a class="code hl_class" href="class_ball.html">Ball</a>* <a class="code hl_variable" href="class_game.html#a3392c78f115bf26b1ff423b0d8720153">ballObject</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_game.html#a8e6a5bc41b74bb10340f6e5ecfd77b10">   29</a></span>    Ogre::SceneNode* <a class="code hl_variable" href="class_game.html#a8e6a5bc41b74bb10340f6e5ecfd77b10">ballNode</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    TrayManager* mTrayMgr;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    TrayListener myTrayListener;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    Label* mInfoLabel;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    Label* mFpsLabel;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    Label* mFps;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    String fpsnum;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_game.html#a482794a4e32343511bb6bcf026882ef8">   31</a></span>    TrayManager* <a class="code hl_variable" href="class_game.html#a482794a4e32343511bb6bcf026882ef8">mTrayMgr</a>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_game.html#aeb04f543103c3df58abd3f0fabacddf3">   32</a></span>    TrayListener <a class="code hl_variable" href="class_game.html#aeb04f543103c3df58abd3f0fabacddf3">myTrayListener</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_game.html#a865f214d85a1307ce200e667bf9c5e5a">   33</a></span>    Label* <a class="code hl_variable" href="class_game.html#a865f214d85a1307ce200e667bf9c5e5a">mInfoLabel</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_game.html#ae6319f9b4e6e7b6c46779b96f7649a85">   34</a></span>    Label* <a class="code hl_variable" href="class_game.html#ae6319f9b4e6e7b6c46779b96f7649a85">mFpsLabel</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_game.html#a1f998db88b1f1f470999506bfed88851">   35</a></span>    Label* <a class="code hl_variable" href="class_game.html#a1f998db88b1f1f470999506bfed88851">mFps</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_game.html#a97298fb47d714bcf0343f7d20b4c7de1">   36</a></span>    String <a class="code hl_variable" href="class_game.html#a97298fb47d714bcf0343f7d20b4c7de1">fpsnum</a>;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    Label* mScoreLabel;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    Label* mScore;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    String scorenum;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="class_game.html#aad943d16cb3192e607d7b9dd2c131583">   38</a></span>    Label* <a class="code hl_variable" href="class_game.html#aad943d16cb3192e607d7b9dd2c131583">mScoreLabel</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_game.html#a17d46670f21ec553797d298ef8edd8bc">   39</a></span>    Label* <a class="code hl_variable" href="class_game.html#a17d46670f21ec553797d298ef8edd8bc">mScore</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_game.html#ae98cd521c6224eef97c221c2b480b109">   40</a></span>    String <a class="code hl_variable" href="class_game.html#ae98cd521c6224eef97c221c2b480b109">scorenum</a>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    Label* mTpuLabel;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    Label* mTpu;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    String Tpunum;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_game.html#ae768327d794275563d56384758d376c0">   42</a></span>    Label* <a class="code hl_variable" href="class_game.html#ae768327d794275563d56384758d376c0">mTpuLabel</a>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_game.html#aeef9980a86834bfc464d45baf79abe05">   43</a></span>    Label* <a class="code hl_variable" href="class_game.html#aeef9980a86834bfc464d45baf79abe05">mTpu</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_game.html#a09a5e63b153ee9b3ab9b8cb3e50578c8">   44</a></span>    String <a class="code hl_variable" href="class_game.html#a09a5e63b153ee9b3ab9b8cb3e50578c8">Tpunum</a>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    Label* mLivesLabel;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    Label* mLives;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    String livesnum;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_game.html#ae23984f0ffb50d51cf4d447db45ba68c">   46</a></span>    Label* <a class="code hl_variable" href="class_game.html#ae23984f0ffb50d51cf4d447db45ba68c">mLivesLabel</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_game.html#a936123feb33b713a27224f6e08ae9c33">   47</a></span>    Label* <a class="code hl_variable" href="class_game.html#a936123feb33b713a27224f6e08ae9c33">mLives</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_game.html#a136f640b2914bda0755435d1e99d69d2">   48</a></span>    String <a class="code hl_variable" href="class_game.html#a136f640b2914bda0755435d1e99d69d2">livesnum</a>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_function" href="class_game.html#ad59df6562a58a614fda24622d3715b65">Game</a>();</div>
@@ -156,23 +165,45 @@ $(document).ready(function(){initNavTree('_game_8h_source.html',''); initResizab
 <div class="ttc" id="aclass_game_html_a01749ddd69800dfdfd4bb290c1ea6ae5"><div class="ttname"><a href="class_game.html#a01749ddd69800dfdfd4bb290c1ea6ae5">Game::CreateLights</a></div><div class="ttdeci">void CreateLights()</div><div class="ttdoc">Creates all the lights needed for the scene</div><div class="ttdef"><b>Definition:</b> Game.cpp:165</div></div>
 <div class="ttc" id="aclass_game_html_a03b7d35d468b04c2bea4e409d7f5e3d6"><div class="ttname"><a href="class_game.html#a03b7d35d468b04c2bea4e409d7f5e3d6">Game::CreateBackground</a></div><div class="ttdeci">void CreateBackground()</div><div class="ttdoc">Creates the Background Plane</div><div class="ttdef"><b>Definition:</b> Game.cpp:140</div></div>
 <div class="ttc" id="aclass_game_html_a07053ea748396f8a7af5ffa0ac86fc08"><div class="ttname"><a href="class_game.html#a07053ea748396f8a7af5ffa0ac86fc08">Game::CreateCamera</a></div><div class="ttdeci">void CreateCamera()</div><div class="ttdoc">Creates the game world camera and binds it to a scenenode</div><div class="ttdef"><b>Definition:</b> Game.cpp:117</div></div>
+<div class="ttc" id="aclass_game_html_a09a5e63b153ee9b3ab9b8cb3e50578c8"><div class="ttname"><a href="class_game.html#a09a5e63b153ee9b3ab9b8cb3e50578c8">Game::Tpunum</a></div><div class="ttdeci">String Tpunum</div><div class="ttdef"><b>Definition:</b> Game.h:44</div></div>
+<div class="ttc" id="aclass_game_html_a136f640b2914bda0755435d1e99d69d2"><div class="ttname"><a href="class_game.html#a136f640b2914bda0755435d1e99d69d2">Game::livesnum</a></div><div class="ttdeci">String livesnum</div><div class="ttdef"><b>Definition:</b> Game.h:48</div></div>
+<div class="ttc" id="aclass_game_html_a17d46670f21ec553797d298ef8edd8bc"><div class="ttname"><a href="class_game.html#a17d46670f21ec553797d298ef8edd8bc">Game::mScore</a></div><div class="ttdeci">Label * mScore</div><div class="ttdef"><b>Definition:</b> Game.h:39</div></div>
+<div class="ttc" id="aclass_game_html_a1aa29adee7d09dc0c13b32cf43a7d611"><div class="ttname"><a href="class_game.html#a1aa29adee7d09dc0c13b32cf43a7d611">Game::paddleNode</a></div><div class="ttdeci">Ogre::SceneNode * paddleNode</div><div class="ttdef"><b>Definition:</b> Game.h:27</div></div>
 <div class="ttc" id="aclass_game_html_a1b02eea54a972fd8c48d3fedcfd55d04"><div class="ttname"><a href="class_game.html#a1b02eea54a972fd8c48d3fedcfd55d04">Game::CreatePhysicsObjects</a></div><div class="ttdeci">void CreatePhysicsObjects()</div><div class="ttdoc">Creates the custom meshes and objects used within the scene</div><div class="ttdef"><b>Definition:</b> Game.cpp:193</div></div>
 <div class="ttc" id="aclass_game_html_a1df5b2aa5e4bb03bc39fafbf4aa1f943"><div class="ttname"><a href="class_game.html#a1df5b2aa5e4bb03bc39fafbf4aa1f943">Game::CreateScene</a></div><div class="ttdeci">void CreateScene()</div><div class="ttdoc">Calls the other functions that create the main objects in the game</div><div class="ttdef"><b>Definition:</b> Game.cpp:107</div></div>
+<div class="ttc" id="aclass_game_html_a1f998db88b1f1f470999506bfed88851"><div class="ttname"><a href="class_game.html#a1f998db88b1f1f470999506bfed88851">Game::mFps</a></div><div class="ttdeci">Label * mFps</div><div class="ttdef"><b>Definition:</b> Game.h:35</div></div>
 <div class="ttc" id="aclass_game_html_a2ba00c3475d222573e5ad54b88b389b7"><div class="ttname"><a href="class_game.html#a2ba00c3475d222573e5ad54b88b389b7">Game::keyPressed</a></div><div class="ttdeci">bool keyPressed(const KeyboardEvent &amp;evt)</div><div class="ttdoc">Input detection function for keydown</div><div class="ttdef"><b>Definition:</b> Game.cpp:64</div></div>
+<div class="ttc" id="aclass_game_html_a3392c78f115bf26b1ff423b0d8720153"><div class="ttname"><a href="class_game.html#a3392c78f115bf26b1ff423b0d8720153">Game::ballObject</a></div><div class="ttdeci">Ball * ballObject</div><div class="ttdef"><b>Definition:</b> Game.h:28</div></div>
+<div class="ttc" id="aclass_game_html_a482794a4e32343511bb6bcf026882ef8"><div class="ttname"><a href="class_game.html#a482794a4e32343511bb6bcf026882ef8">Game::mTrayMgr</a></div><div class="ttdeci">TrayManager * mTrayMgr</div><div class="ttdef"><b>Definition:</b> Game.h:31</div></div>
 <div class="ttc" id="aclass_game_html_a495b7d5ab243a04b0c5fc5e28c4f73b4"><div class="ttname"><a href="class_game.html#a495b7d5ab243a04b0c5fc5e28c4f73b4">Game::keyReleased</a></div><div class="ttdeci">bool keyReleased(const KeyboardEvent &amp;evt)</div><div class="ttdef"><b>Definition:</b> Game.cpp:89</div></div>
+<div class="ttc" id="aclass_game_html_a499958f670d649e1a6b3864d5fda3580"><div class="ttname"><a href="class_game.html#a499958f670d649e1a6b3864d5fda3580">Game::paddleObject</a></div><div class="ttdeci">Paddle * paddleObject</div><div class="ttdef"><b>Definition:</b> Game.h:26</div></div>
 <div class="ttc" id="aclass_game_html_a72772b628443c3675976d6b5e6c9ec2a"><div class="ttname"><a href="class_game.html#a72772b628443c3675976d6b5e6c9ec2a">Game::~Game</a></div><div class="ttdeci">virtual ~Game()</div><div class="ttdef"><b>Definition:</b> Game.h:52</div></div>
+<div class="ttc" id="aclass_game_html_a865f214d85a1307ce200e667bf9c5e5a"><div class="ttname"><a href="class_game.html#a865f214d85a1307ce200e667bf9c5e5a">Game::mInfoLabel</a></div><div class="ttdeci">Label * mInfoLabel</div><div class="ttdef"><b>Definition:</b> Game.h:33</div></div>
+<div class="ttc" id="aclass_game_html_a8e6a5bc41b74bb10340f6e5ecfd77b10"><div class="ttname"><a href="class_game.html#a8e6a5bc41b74bb10340f6e5ecfd77b10">Game::ballNode</a></div><div class="ttdeci">Ogre::SceneNode * ballNode</div><div class="ttdef"><b>Definition:</b> Game.h:29</div></div>
+<div class="ttc" id="aclass_game_html_a936123feb33b713a27224f6e08ae9c33"><div class="ttname"><a href="class_game.html#a936123feb33b713a27224f6e08ae9c33">Game::mLives</a></div><div class="ttdeci">Label * mLives</div><div class="ttdef"><b>Definition:</b> Game.h:47</div></div>
+<div class="ttc" id="aclass_game_html_a97298fb47d714bcf0343f7d20b4c7de1"><div class="ttname"><a href="class_game.html#a97298fb47d714bcf0343f7d20b4c7de1">Game::fpsnum</a></div><div class="ttdeci">String fpsnum</div><div class="ttdef"><b>Definition:</b> Game.h:36</div></div>
+<div class="ttc" id="aclass_game_html_aacecda78ea5b9e76eaf53f511addd514"><div class="ttname"><a href="class_game.html#aacecda78ea5b9e76eaf53f511addd514">Game::root</a></div><div class="ttdeci">Root * root</div><div class="ttdef"><b>Definition:</b> Game.h:22</div></div>
+<div class="ttc" id="aclass_game_html_aad943d16cb3192e607d7b9dd2c131583"><div class="ttname"><a href="class_game.html#aad943d16cb3192e607d7b9dd2c131583">Game::mScoreLabel</a></div><div class="ttdeci">Label * mScoreLabel</div><div class="ttdef"><b>Definition:</b> Game.h:38</div></div>
 <div class="ttc" id="aclass_game_html_ad5329359dfd334128400a082fa3fd2c9"><div class="ttname"><a href="class_game.html#ad5329359dfd334128400a082fa3fd2c9">Game::CreateUI</a></div><div class="ttdeci">void CreateUI()</div><div class="ttdoc">Creates the traymanager and the different labels present within the scene</div><div class="ttdef"><b>Definition:</b> Game.cpp:221</div></div>
-<div class="ttc" id="aclass_game_html_ad59df6562a58a614fda24622d3715b65"><div class="ttname"><a href="class_game.html#ad59df6562a58a614fda24622d3715b65">Game::Game</a></div><div class="ttdeci">Game()</div><div class="ttdef"><b>Definition:</b> Game.cpp:36</div></div>
+<div class="ttc" id="aclass_game_html_ad59df6562a58a614fda24622d3715b65"><div class="ttname"><a href="class_game.html#ad59df6562a58a614fda24622d3715b65">Game::Game</a></div><div class="ttdeci">Game()</div><div class="ttdoc">Game class Constructor.</div><div class="ttdef"><b>Definition:</b> Game.cpp:36</div></div>
 <div class="ttc" id="aclass_game_html_ad61ea3e9ad3e02e5e4a5430a2a1d6023"><div class="ttname"><a href="class_game.html#ad61ea3e9ad3e02e5e4a5430a2a1d6023">Game::UpdateUI</a></div><div class="ttdeci">void UpdateUI(const Ogre::FrameEvent &amp;evt)</div><div class="ttdoc">A function to update the UI</div><div class="ttdef"><b>Definition:</b> Game.cpp:249</div></div>
+<div class="ttc" id="aclass_game_html_ad8a51002185f965be0cdd5d2c71bf0e5"><div class="ttname"><a href="class_game.html#ad8a51002185f965be0cdd5d2c71bf0e5">Game::physicsObjects</a></div><div class="ttdeci">std::vector&lt; PhysicsObject * &gt; physicsObjects</div><div class="ttdef"><b>Definition:</b> Game.h:24</div></div>
 <div class="ttc" id="aclass_game_html_adadc9291cf53d2843b146e25052a72a3"><div class="ttname"><a href="class_game.html#adadc9291cf53d2843b146e25052a72a3">Game::CreateFrameListener</a></div><div class="ttdeci">void CreateFrameListener()</div><div class="ttdoc">Creates the custom observer class framelistener</div><div class="ttdef"><b>Definition:</b> Game.cpp:131</div></div>
+<div class="ttc" id="aclass_game_html_adec79e7e26247ccdf0556137e540ac58"><div class="ttname"><a href="class_game.html#adec79e7e26247ccdf0556137e540ac58">Game::scnMgr</a></div><div class="ttdeci">SceneManager * scnMgr</div><div class="ttdef"><b>Definition:</b> Game.h:21</div></div>
+<div class="ttc" id="aclass_game_html_ae23984f0ffb50d51cf4d447db45ba68c"><div class="ttname"><a href="class_game.html#ae23984f0ffb50d51cf4d447db45ba68c">Game::mLivesLabel</a></div><div class="ttdeci">Label * mLivesLabel</div><div class="ttdef"><b>Definition:</b> Game.h:46</div></div>
 <div class="ttc" id="aclass_game_html_ae4618ba40eabbbe65e35f1bb239aa29b"><div class="ttname"><a href="class_game.html#ae4618ba40eabbbe65e35f1bb239aa29b">Game::setup</a></div><div class="ttdeci">void setup()</div><div class="ttdoc">Main Setup Function</div><div class="ttdef"><b>Definition:</b> Game.cpp:43</div></div>
+<div class="ttc" id="aclass_game_html_ae6319f9b4e6e7b6c46779b96f7649a85"><div class="ttname"><a href="class_game.html#ae6319f9b4e6e7b6c46779b96f7649a85">Game::mFpsLabel</a></div><div class="ttdeci">Label * mFpsLabel</div><div class="ttdef"><b>Definition:</b> Game.h:34</div></div>
+<div class="ttc" id="aclass_game_html_ae768327d794275563d56384758d376c0"><div class="ttname"><a href="class_game.html#ae768327d794275563d56384758d376c0">Game::mTpuLabel</a></div><div class="ttdeci">Label * mTpuLabel</div><div class="ttdef"><b>Definition:</b> Game.h:42</div></div>
+<div class="ttc" id="aclass_game_html_ae98cd521c6224eef97c221c2b480b109"><div class="ttname"><a href="class_game.html#ae98cd521c6224eef97c221c2b480b109">Game::scorenum</a></div><div class="ttdeci">String scorenum</div><div class="ttdef"><b>Definition:</b> Game.h:40</div></div>
+<div class="ttc" id="aclass_game_html_aeb04f543103c3df58abd3f0fabacddf3"><div class="ttname"><a href="class_game.html#aeb04f543103c3df58abd3f0fabacddf3">Game::myTrayListener</a></div><div class="ttdeci">TrayListener myTrayListener</div><div class="ttdef"><b>Definition:</b> Game.h:32</div></div>
+<div class="ttc" id="aclass_game_html_aeef9980a86834bfc464d45baf79abe05"><div class="ttname"><a href="class_game.html#aeef9980a86834bfc464d45baf79abe05">Game::mTpu</a></div><div class="ttdeci">Label * mTpu</div><div class="ttdef"><b>Definition:</b> Game.h:43</div></div>
 <div class="ttc" id="aclass_paddle_html"><div class="ttname"><a href="class_paddle.html">Paddle</a></div><div class="ttdoc">Class inheriting from PhysicsObject to implement the paddle functionality</div><div class="ttdef"><b>Definition:</b> Paddle.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_5c5a3917ce736961acde7ce0a6f8430e.html">OrgreTemplateV2</a></li><li class="navelem"><a class="el" href="_game_8h.html">Game.h</a></li>
+    <li class="navelem"><a class="el" href="dir_275089585c7fc1b5fd5d7d42c69cb1da.html">D:</a></li><li class="navelem"><a class="el" href="dir_29e87368881c7cf1a5cd67445bf26578.html">Programming Projects</a></li><li class="navelem"><a class="el" href="dir_dbfadae803e738c31deb0dc79984a3e3.html">GAME3121 - Game Engine Development</a></li><li class="navelem"><a class="el" href="dir_2f4dc6b3c6a67f55f027d4f1d32a17b3.html">GAME3121 - TulipChris - Assignment1</a></li><li class="navelem"><a class="el" href="dir_1be3a86f97ba29894f504d9f15b78c2c.html">OrgreTemplateV2</a></li><li class="navelem"><a class="el" href="_game_8h.html">Game.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>

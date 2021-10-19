@@ -10,5 +10,9 @@ var class_ball =
     [ "ReflectVelocity", "class_ball.html#a1d8818d54e3214842a77c73de3441770", null ],
     [ "ResetBall", "class_ball.html#aa26cab364ddfa878a21e22c941fba69c", null ],
     [ "setPaddleReference", "class_ball.html#a46200086307d46625e592083fa88b356", null ],
-    [ "update", "class_ball.html#ad6a6ba35fbf7d09ab9cf1ed84df7bda7", null ]
+    [ "update", "class_ball.html#ad6a6ba35fbf7d09ab9cf1ed84df7bda7", null ],
+    [ "inPlay", "class_ball.html#a0d24dd187571e3be9a9eef3ac0285dad", null ],
+    [ "lives", "class_ball.html#ace40aa70515f9cd46dbad2ce94808823", null ],
+    [ "paddleReference", "class_ball.html#a502b218e664e42bbf5cb83a50dbb577f", null ],
+    [ "score", "class_ball.html#a4a79e53819c9219bfdd2589c2308a737", null ]
 ];

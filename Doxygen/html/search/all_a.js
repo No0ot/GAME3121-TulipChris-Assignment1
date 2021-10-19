@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['_7eball_0',['~Ball',['../class_ball.html#a20f2f6ac0bf648f406a8e12e63429fcd',1,'Ball']]],
-  ['_7egame_1',['~Game',['../class_game.html#a72772b628443c3675976d6b5e6c9ec2a',1,'Game']]],
-  ['_7epaddle_2',['~Paddle',['../class_paddle.html#ac03c6b92f0b9cd2e67edff4c318ad030',1,'Paddle']]],
-  ['_7ephysicsobject_3',['~PhysicsObject',['../class_physics_object.html#a2172e8b71176e3a54d6a8f5ff15d4178',1,'PhysicsObject']]]
+  ['readme_2edox_0',['README.dox',['../_r_e_a_d_m_e_8dox.html',1,'']]],
+  ['reflectvelocity_1',['ReflectVelocity',['../class_ball.html#a1d8818d54e3214842a77c73de3441770',1,'Ball']]],
+  ['resetball_2',['ResetBall',['../class_ball.html#aa26cab364ddfa878a21e22c941fba69c',1,'Ball']]],
+  ['root_3',['root',['../class_game.html#aacecda78ea5b9e76eaf53f511addd514',1,'Game']]]
 ];
